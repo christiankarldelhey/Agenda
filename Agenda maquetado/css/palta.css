@@ -870,6 +870,7 @@ a.unlink {
 
 
 
+/*AGENDA*/
 
 
 .tabla-eventos table tr .fa {
@@ -898,8 +899,6 @@ a.unlink {
 
 
 
-
-
 .agenda-ubicacion-club .fa {
   color:#FEC221;
   font-size:60px;
@@ -907,17 +906,12 @@ a.unlink {
 
 }
 
-
 .agenda-ubicacion-club p {
   font-weight: 500;
 }
 
 
-
-
-/*CAROUSEL*/
-
-
+/*CAROUSEL-AGENDA - SLIDER IMGS*/
 
 .carousel-inner.onebyone-carosel { margin: auto; width:100%; }
 .onebyone-carosel .active.left { left: -33.33%; }
@@ -963,9 +957,3 @@ a.unlink {
    filter:none !important;
 }
 
-/*.carousel-indicators{
-  top:260px;
-}*/
-/*i{
-    color:red;
-*/
