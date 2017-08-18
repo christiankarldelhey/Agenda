@@ -911,6 +911,12 @@ a.unlink {
 }
 
 
+.agenda-resultados .agenda-resultados-titulo{
+  font-size: 25px; 
+  font-weight: 500;
+}
+
+
 /*CAROUSEL-AGENDA - SLIDER IMGS*/
 
 .carousel-inner.onebyone-carosel { margin: auto; width:100%; }
