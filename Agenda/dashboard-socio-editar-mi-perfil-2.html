@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/templates.css">
 
+
   <!-- FORMULARIO -->
   <!-- iCheck -->
   <link href="plugins/iCheck/all.css" rel="stylesheet">
@@ -28,6 +29,7 @@
   <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
   <!-- date-range-picker -->
   <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
 
   <!-- Font Awesome -->
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">-->
@@ -62,6 +64,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   
+
+
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
@@ -217,7 +221,27 @@
                             </ul>
                         </li>
 
-                      
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Componentes <b class="caret"></b></a>
+                            <ul class="dropdown-menu submenu" role="menu">
+                                <li><a href="Template-con-C.html">Layout Admin-Poncho</a>
+                                </li>
+                                <li><a href="Template-de-Elementos.html">Elementos</a>
+                                </li>
+                                <li><a href="Template-de-Panels.html">Atajos y Paneles</a>
+                                </li>
+                                <li><a href="Template-de-Alerts.html">Alerts</a>
+                                </li>
+                                <li><a href="Template-de-Inbox.html">Mensajes</a>
+                                </li>
+                                <li><a href="Template-de-Tables.html">Tables</a>
+                                </li>
+                                <li><a href="Template-de-Form.html">Formularios</a>
+                                </li>
+                                <li><a href="Template-de-Iconos.html">Iconos</a>
+                                </li>
+                            </ul>
+                        </li>
 
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -228,21 +252,21 @@
                                 <li class="bg-white">
 
                                     <div class="col-xs-2 col-sm-3 m-t-1 m-b-1">
-                                        <img src="dist-palta/img/profile-img.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:100%">
-                                    </div>
-                                    <div class="col-xs-10 col-sm-9">
-                                        <h6 class="p-t-2">Alexander Pierce</h6>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </li>
-                                <li>
-                                    <a href="#" class="">Profile</a>
-                                    <a href="#" class="">Sign out</a>
-                                </li>
-                            </ul>
+                                       <img src="dist-palta/img/profile-img.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:100%">
+                                   </div>
+                                   <div class="col-xs-10 col-sm-9">
+                                       <h6 class="p-t-2">Alexander Pierce</h6>
+                                   </div>
+                                   <div class="clearfix"></div>
+                               </li>
+                               <li>
+                                <a href="#" class="">Profile</a>
+                                <a href="#" class="">Sign out</a>
+                            </li>
+                        </ul>
 
 
-                        </li>
+                    </li>
                             <!--
                             <li>
                                 <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
@@ -266,8 +290,8 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu side-bar-margin">
-        <!--<li class="header">SIDE NAVIGATOR</li>-->
-        <li class="treeview hidden-xs">
+          <!--<li class="header">SIDE NAVIGATOR</li>-->
+          <li class="treeview hidden-xs">
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <i class="fa fa-bars"></i>
                 <span class="sr-only">Toggle navigation</span>
@@ -311,146 +335,89 @@
 </aside>
 
 
-              <!-- Content Wrapper. Contains page content -->
-              <div class="content-wrapper">
-                <!-- Main content -->
-                <section class="container"><!-- se cambió container por content!!! -->
-                  <div class="row">
-                    <!-- /.col -->
-                    <div class="col-md-12">
-                      <h3>Editar Proyecto</h3>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="container"><!-- se cambió container por content!!! -->
+      <div class="row">
+        <!-- /.col -->
+        <div class="col-md-12">
+            <h3>Editar Perfil</h3>
 
 
-                      <div class="panel panel-default panel-admin">
-                        <div class="panel-heading bg-primary text-white text-left">
-                          <h4>Mi Proyecto</h4>
+            <div class="panel panel-default panel-admin">
+                <div class="panel-heading bg-primary text-white text-left">
+                    <h4>Educación y situación laboral</h4>
+                </div>
+
+                <div class="panel-body text-left">
+                    <form class="form-azul m-t-2">
+                        <div class="col-md-8 col-md-offset-2">
+
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label class="control-label">Nivel educativo</label>
+                              <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
+                                <optgroup>
+                                  <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
+                                  <option value="2">Tengo una idea y quiero desarrollarla</option>
+                                  <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
+                                  <option value="4">Ya tengo un emprendimiento en marcha</option>
+                                  <option value="5">No quiero emprender</option>
+                                </optgroup>
+                              </select>
+                            </div>                              
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label class="control-label">Describe tu situación laboral</label>
+                              <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
+                                <optgroup>
+                                  <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
+                                  <option value="2">Tengo una idea y quiero desarrollarla</option>
+                                  <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
+                                  <option value="4">Ya tengo un emprendimiento en marcha</option>
+                                  <option value="5">No quiero emprender</option>
+                                </optgroup>
+                              </select>
+                            </div>                              
+                          </div>
+
+
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label class="control-label">¿Sos emprendedor? Elige la opción que mejor describa tu situación actual</label>
+                              <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
+                                <optgroup>
+                                  <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
+                                  <option value="2">Tengo una idea y quiero desarrollarla</option>
+                                  <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
+                                  <option value="4">Ya tengo un emprendimiento en marcha</option>
+                                  <option value="5">No quiero emprender</option>
+                                </optgroup>
+                              </select>
+                            </div>                              
+                          </div>
+
                         </div>
-
-                        <div class="panel-body text-left">
-                          <form class="form-azul m-t-2">
-                            <div class="col-md-8 col-md-offset-2">
-
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Nombre de tu proyecto o emprendimiento</label>
-                                  <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
-                                    <optgroup>
-                                      <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
-                                      <option value="2">Tengo una idea y quiero desarrollarla</option>
-                                      <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
-                                      <option value="4">Ya tengo un emprendimiento en marcha</option>
-                                      <option value="5">No quiero emprender</option>
-                                    </optgroup>
-                                  </select>
-                                </div>                              
-                              </div>
-
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Sector Productivo</label>
-                                  <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
-                                    <optgroup>
-                                      <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
-                                      <option value="2">Tengo una idea y quiero desarrollarla</option>
-                                      <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
-                                      <option value="4">Ya tengo un emprendimiento en marcha</option>
-                                      <option value="5">No quiero emprender</option>
-                                    </optgroup>
-                                  </select>
-                                </div>                              
-                              </div>
-
-
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">¿Cómo se encuentra constituido tu emprendimiento?</label>
-                                  <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
-                                    <optgroup>
-                                      <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
-                                      <option value="2">Tengo una idea y quiero desarrollarla</option>
-                                      <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
-                                      <option value="4">Ya tengo un emprendimiento en marcha</option>
-                                      <option value="5">No quiero emprender</option>
-                                    </optgroup>
-                                  </select>
-                                </div>                              
-                              </div>
-
-                              <div class="form-group col-md-12 m-b-0">
-                                <label class="control-label">Cantidad de socios o equipo fundador <span class="text-muted"> (opcional)</span></label>
-                                <input class="form-control" type="" name="">
-                              </div>
-
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Antigüedad del proyecto <span class="text-muted"> (opcional)</span> </label>
-                                  <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
-                                    <optgroup>
-                                      <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
-                                      <option value="2">Tengo una idea y quiero desarrollarla</option>
-                                      <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
-                                      <option value="4">Ya tengo un emprendimiento en marcha</option>
-                                      <option value="5">No quiero emprender</option>
-                                    </optgroup>
-                                  </select>
-                                </div>                              
-                              </div>
-
-                              <div class="form-group col-md-12 m-b-0">
-                                <label class="control-label">Cantidad de empleados <span class="text-muted"> (opcional)</span></label>
-                                <input class="form-control" type="" name="">
-                              </div>
-
-
-
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Nivel de facturación promedio mensual </label>
-                                  <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
-                                    <optgroup>
-                                      <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
-                                      <option value="2">Tengo una idea y quiero desarrollarla</option>
-                                      <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
-                                      <option value="4">Ya tengo un emprendimiento en marcha</option>
-                                      <option value="5">No quiero emprender</option>
-                                    </optgroup>
-                                  </select>
-                                </div>                              
-                              </div>
-
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label">Mi proyecto necesita </label>
-                                  <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
-                                    <optgroup>
-                                      <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
-                                      <option value="2">Tengo una idea y quiero desarrollarla</option>
-                                      <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
-                                      <option value="4">Ya tengo un emprendimiento en marcha</option>
-                                      <option value="5">No quiero emprender</option>
-                                    </optgroup>
-                                  </select>
-                                </div>                              
-                              </div>
-
-                            </div>
-                            <div class="col-xs-12">
-                              <button class="btn btn-success center-block text-center">guardar</button>
-                            </div>
-                          </form>
+                        <div class="col-xs-12">
+                            <button class="btn btn-success center-block text-center">guardar</button>
                         </div>
-                      </div>            
+                    </form>
+                </div>
+            </div>            
+            
+            
+        </div>
 
+    </div>
 
-                    </div>
+</section>
+<!-- /.content -->
+</div>
 
-                  </div>
-
-                </section>
-                <!-- /.content -->
-              </div>
-
-              <!-- /.content-wrapper -->
+<!-- /.content-wrapper -->
 
   <!-- Add the sidebar's background. This div must be placed
   immediately after the control sidebar -->
@@ -459,46 +426,47 @@
 <!-- ./wrapper -->
 
 <footer class="main-footer" style="padding-bottom: 32px; padding-top: 60px; border-top: 1px solid #cacaca; background:#FFFFFF; margin-left: 0px !important;">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <img class="image-responsive" src="dist-palta/img/logoMinisterio.png" alt="Ministerio de Producción">
-        <br>
-        <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a>
-        </p>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div id="nav_menu-3" class="widget_nav_menu">
-          <div class="menu-footer-b-container">
-            <ul id="menu-footer-b" class="menu">
-              <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http:/#">Item I</a>
-              </li>
-              <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http:/#">Item II</a>
-              </li>
-              <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http:/#">Item III</a>
-              </li>
-              <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http:/#">Item IV</a>
-              </li>
-            </ul>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="image-responsive" src="dist-palta/img/logoMinisterio.png" alt="Ministerio de Producción">
+                <br>
+                <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div id="nav_menu-3" class="widget_nav_menu">
+                    <div class="menu-footer-b-container">
+                        <ul id="menu-footer-b" class="menu">
+                            <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http:/#">Item I</a>
+                            </li>
+                            <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http:/#">Item II</a>
+                            </li>
+                            <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http:/#">Item III</a>
+                            </li>
+                            <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http:/#">Item IV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div id="nav_menu-2" class="widget_nav_menu">
+                    <div class="menu-footer-a-container">
+                        <ul id="menu-footer-a" class="menu">
+                            <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http:/#">Item 1</a>
+                            </li>
+                            <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http:/#">Item 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div id="nav_menu-2" class="widget_nav_menu">
-          <div class="menu-footer-a-container">
-            <ul id="menu-footer-a" class="menu">
-              <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http:/#">Item 1</a>
-              </li>
-              <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http:/#">Item 2</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </footer>
 
+<!-- JS -->
 
 <!-- jQuery 2.2.3 -->
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
@@ -507,15 +475,8 @@
 <!-- Slimscroll -->
 <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="plugins/fastclick/fastclick.js"></script>
+<!--<script src="plugins/fastclick/fastclick.js"></script>-->
 <!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
-<!-- mapinit -->
-<script src="dist/js/mapinit.js"></script>
-<!-- iCheck -->
-<script src="plugins/iCheck/icheck.min.js"></script>
-<!-- Page Script -->
-
 
 <!-- FORMULARIOS NUEVOS JS -->
 
@@ -528,8 +489,5 @@
 
 
 
-<!-- AGENDA mapa js -->
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
 </body>
 </html>
