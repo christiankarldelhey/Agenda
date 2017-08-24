@@ -183,8 +183,8 @@
     font-size: 15px;
 }
 
-.panel.panel-default .panel-heading {
-    min-height: 40px;
+.panel-admin .panel-heading {
+    min-height: 40px !important;
 }
 
 .navbar { 
