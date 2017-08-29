@@ -29,6 +29,9 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
   <!-- iCheck -->
+    <!-- datepicker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+
   
   <!-- PALTA dist-palta -->
   <link rel="stylesheet" href="dist-palta/css/poncho.min.css">
@@ -248,21 +251,37 @@
       <h3 class="text-center m-b-2">Encontrá los eventos más relevantes de tu ubicación</h3>
       <div class="col-xs-12">
         <form>
-        <div class="col-md-3 form-group">
-          <input class="form-control" type="" name="" placeholder="Provincia...">
-        </div>
-        <div class="col-md-3 form-group">
-          <input class="form-control" type="" name="" placeholder="Provincia...">
-        </div>
-    
-        <div class="col-md-3 form-group">
-          <input class="form-control " type="" name="" placeholder="Provincia...">
-        </div>
-        <div class="col-md-3 form-group">
-          <input class="form-control " type="" name="" placeholder="Provincia...">
-        </div>
-        </form>
-      </div><!-- row -->
+          <div class="col-md-3 form-group">
+            <input class="form-control" type="" name="" placeholder="Buenos Aires">
+          </div>
+          <div class="form-group col-md-3">
+            <div class="input-group">
+              <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
+              <div class="input-group-addon bg-primary p-l-2 p-r-2">
+                <i class="fa fa-calendar"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <div class="input-group">
+              <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" placeholder="Hasta..." data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
+              <div class="input-group-addon bg-primary p-l-2 p-r-2">
+                <i class="fa fa-calendar"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <select class="form-control" id="">
+              <option value="" disabled="" selected="">Temática..</option>
+              <option>Lorem</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </form>
+        </div><!-- row -->
 
       <div class="row">
       <div class="col-sm-12 table-responsive">
@@ -271,8 +290,8 @@
           <tr role="row">
           <th class="sorting_asc" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Nro. de Voucher: activate to sort column descending" style="width: 160px;">Fecha y hora</th>
           <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Detalle: activate to sort column ascending" style="width: 300px;">Evento</th>
-          <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Proforma: activate to sort column ascending" style="width: 385px;">Dirección</th>
-          <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Factura: activate to sort column ascending" style="width: 200px;"></th>
+          <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Proforma: activate to sort column ascending" style="width: 435px;">Dirección</th>
+          <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Factura: activate to sort column ascending" style="width: 150px;"></th>
           </tr>
         </thead>
 
@@ -588,6 +607,27 @@
 <script src="plugins/iCheck/icheck.min.js"></script>
 <!-- Page Script -->
 
+<!-- FORM -->
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script>
+    //Datemask dd/mm/yyyy
+    $("#dateinput").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+    $("[data-mask]").inputmask();
+</script>
+<!-- Datepicker -->
+<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+<script type="application/javascript">
+  $('input.dateinput').datepicker({
+    language: "es",
+    autoclose: true,
+    clearBtn: true,
+    orientation: "top"
+  });
+</script>
 
 
 <!-- AGENDA mapa js -->

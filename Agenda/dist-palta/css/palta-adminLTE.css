@@ -279,51 +279,6 @@
 }
 
 
-/*CAROUSEL-AGENDA - SLIDER IMGS*/
-
-.carousel-inner.onebyone-carosel { margin: auto; width:100%; }
-.onebyone-carosel .active.left { left: -33.33%; }
-.onebyone-carosel .active.right { left: 33.33%; }
-.onebyone-carosel .next { left: 33.33%; }
-.onebyone-carosel .prev { left: -33.33%; }
-#myCarousel .col-md-4{
-  position: relative;
-  min-height: 1px;
-  padding-right: 0;
-  padding-left: 0;
-}
-.carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
-}
-#myCarousel{
-  margin-top:105px;
-}
-.carousel-control {
-  background-color: #cacaca  !important;
-  font-size: 1.5em;
-  height: 32px;
-  line-height: 1.4;
-  margin: -55px 2px 0px 1112px;
-  padding: 0px 0px;
-  width: 32px;
-  -webkit-transition: color .2s;
-  -moz-transition: color .2s;
-  -ms-transition: color .2s;
-  -0-transition: color .2s;
-  transition: color .2s;
-  border-radius: 3px;
-  opacity: 1 !important;
-}
-.carousel-control:hover{
-  opacity:0.8 !important;
-}
-
-.abab {
-  margin: -55px 38px 0px;
-   background-image:none !important;
-   filter:none !important;
-}
 
 .agenda-datos-perfil td {
   border-bottom: 1px solid #f4f4f4;
@@ -336,5 +291,44 @@
 .btn-mobileSelect-gen {
   text-transform: none !important;
   font-weight: 400 !important;
+  overflow: hidden;
+  line-height: 1.7;
 }
 
+/*CAROUSEL*/
+
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev    { left: -25%; }
+.carousel-control        { width:  4%; }
+
+
+.carousel-inner .item .col-xs-3 {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+.carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left {
+  margin-top:15px !important;
+}
+
+/*BOTONES*/
+
+.btn-contorno {
+  padding: 12px 34px;
+  background-color: white;
+  color: #0695D6;
+  border:1px solid #0695D6;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.btn-contorno .fa {
+  vertical-align: middle;
+}
+
+.btn-contorno:hover {
+  border:2px solid #0695D6 !important;
+  background-color: white !important;
+}
