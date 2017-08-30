@@ -327,8 +327,9 @@
                               <div class="col-md-12">
                                 <div class="form-group">
                                   <label class="control-label">Nombre de tu proyecto o emprendimiento</label>
-                                  <select style="" class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
+                                  <select style="" class="select-agenda menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
                                     <optgroup>
+                                      <option class="primero" value="" selected disabled hidden="">Seleccioná..</option>
                                       <option value="1" style=" "  >Quiero emprender, pero no tengo ninguna idea</option>
                                       <option value="2">Tengo una idea y quiero desarrollarla</option>
                                       <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
@@ -452,45 +453,58 @@
 </div>
 <!-- ./wrapper -->
 
-<footer class="main-footer" style="padding-bottom: 32px; padding-top: 60px; border-top: 1px solid #cacaca; background:#FFFFFF; margin-left: 0px !important;">
+<footer class="main-footer bg-gclaro">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <img class="image-responsive" src="dist-palta/img/logoMinisterio.png" alt="Ministerio de Producción">
-        <br>
-        <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a>
-        </p>
+      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+        <ul>
+          <li><p style="text-transform: uppercase;">El Ministerio</p><p></p></li>
+          <li><a href="http://www.produccion.gob.ar/institucional/mision/">Misión</a></li>
+          <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">El Ministro</a></li>
+          <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">Organigrama</a></li>
+          <li><a href="http://www.produccion.gob.ar/institucional/secretarias/">Secretarías</a></li>
+          <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/">Subsecretarías</a></li>
+        </ul>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <div id="nav_menu-3" class="widget_nav_menu">
-          <div class="menu-footer-b-container">
-            <ul id="menu-footer-b" class="menu">
-              <li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http:/#">Item I</a>
-              </li>
-              <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http:/#">Item II</a>
-              </li>
-              <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http:/#">Item III</a>
-              </li>
-              <li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a href="http:/#">Item IV</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+        <ul>
+          <li><p style="text-transform: uppercase;">Trámites y Servicios</p></li>
+          <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">Todos</a></li>
+          <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PyMEs</a></li>
+          <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">Emprendedores</a></li>
+          <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">Consumidor</a></li>
+          <li><a href="http://www.produccion.gob.ar/tramites-comercio/">Comercio Exterior</a></li>
+          <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">Industria</a></li>
+        </ul>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <div id="nav_menu-2" class="widget_nav_menu">
-          <div class="menu-footer-a-container">
-            <ul id="menu-footer-a" class="menu">
-              <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http:/#">Item 1</a>
-              </li>
-              <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http:/#">Item 2</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+        <ul>
+          <li><p style="text-transform: uppercase;">Sala de Prensa</p></li>
+          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">Comunicados</a></li>
+          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/fotos/">Fotos</a></li>
+          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/videos/">Videos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 text-xs-center text-md-left">
+        <ul>
+          <li><p style="text-transform: uppercase;">Contacto</p></li>
+          <li><a href="http://dna2-tests.produccion.gob.ar/dna2bpm/perfil/sugerencias" target="_blank">Ayuda</a></li>
+          <li><a href="mailto:info@produccion.gob.ar" target="_blank">info@producción.gob.ar</a></li>
+          <li><p>+54 (011) 4349.3697</p></li>
+          <li><p>0800.333.7963</p></li>
+        </ul>
       </div>
     </div>
+      <div class="row">
+    <div class="col-md-8 pull-left">
+      <p style="margin-top: 20px;"> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
+    </div>
+    <div class="col-md-4 img-ministerio">
+      <img src="img/logoministerio.png" height="50">
+    </div>
   </div>
+  </div>
+
 </footer>
 
 
@@ -525,5 +539,20 @@
 <!-- AGENDA mapa js -->
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
+
+<!-- First option select grey -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $(".select-agenda").on("change", function(){
+    $(this).css("color", "#000");
+    });
+    });
+
+/*function setColor(dropdown){
+    dropdown.style.color = "black";
+};*/
+  </script>
+
+
 </body>
 </html>
