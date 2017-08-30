@@ -373,8 +373,8 @@
 
           <form class="col-md-8 col-md-offset-2 m-b-1">
           <div class="form-group">
-            <select class="form-control" id="">
-              <option>Seleccionar...</option>
+            <select class="form-control select-agenda" id="">
+              <option value="" selected disabled>Seleccionar...</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -516,6 +516,20 @@ $('.carousel .item').each(function(){
   }
 });
   </script>
+
+<!-- First option select grey -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $(".select-agenda").on("change", function(){
+    $(this).css("color", "#000");
+    });
+    });
+
+/*function setColor(dropdown){
+    dropdown.style.color = "black";
+};*/
+  </script>
+
 
 </body>
 </html>
