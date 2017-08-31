@@ -4,7 +4,6 @@
 .border-gray {
 	border:1px solid #ccc;
 }
-
 .bg-none, .bg-none:hover {
   background: none !important;
 }
@@ -44,9 +43,6 @@
   border:2px solid #3c8dbc !important;
   color: #3c8dbc;
 }
-
-
-
 
 .btn.btn-sm.bg-none {
   background:none !important;
@@ -148,10 +144,11 @@
 }
 
 
-
-
-
 @media screen and (max-width: 767px) {
+  .section-botonera button {
+    margin: 8px 25px !important;
+  }
+
 	.table-responsive {
 		border: none;
 	}
@@ -212,10 +209,6 @@
 	}
 }
 
-
-
-
-
 .padding-10 {
 	padding:10px !important;
 }
@@ -232,13 +225,17 @@
 
 
 
+
+
+
+
+
 /*AGENDA*/
 
 
 .tabla-eventos table tr .fa {
   font-size: 25px;
 }
-
 
 .distribuir {
   display:flex !important;
@@ -259,26 +256,20 @@
   margin-top:100px;
 }
 
-
-
 .agenda-ubicacion-club .fa {
   color:#FEC221;
   font-size:60px;
   margin-bottom: 20px;
-
 }
 
 .agenda-ubicacion-club p {
   font-weight: 500;
 }
 
-
 .agenda-resultados .agenda-resultados-titulo{
   font-size: 25px; 
   font-weight: 500;
 }
-
-
 
 .agenda-datos-perfil td {
   border-bottom: 1px solid #f4f4f4;
@@ -287,6 +278,8 @@
     border-bottom-color: rgb(244, 244, 244);
     border-top: 0px !important;
 }
+
+/*FULLSCREEN SELECT-ESTILOS*/
 
 .btn-mobileSelect-gen {
   text-transform: none !important;
@@ -333,14 +326,28 @@
   background-color: white !important;
 }
 
+/*HEADER-AGENDA*/
+
+header .dropdown-toggle .fa-user {
+  font-size: 24px !important;
+  margin-top:5px;
+}
+
+/*MAIN-FOOTER*/
+
 .main-footer {
     border-top: 0px;
 }
+.img-ministerio{
+  float:right !important;
+}
 
+/*FORMS*/
+
+/*gris primera opcion del select*/
 .select-agenda {
   color: #767676;
 }
-
 
 .select-agenda>option:not(:first-child) {
     color: #000;
@@ -350,9 +357,8 @@
 }
 
 
-.img-ministerio{
-  float:right !important;
-}
+
+/*AGENDA-MEDIA QUERIES*/
 
 /* Extra Small Devices, Phones */
   @media only screen and (max-width : 991px){

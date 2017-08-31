@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>dashboard editar perfil</title>
+  <title>dashboard editar proyecto</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -13,14 +13,36 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/templates.css">
 
+  <!-- FORMULARIO -->
+
+  <!-- iCheck -->
+  <link href="plugins/iCheck/all.css" rel="stylesheet">
+
+  <!-- BOOTSTRAP-Tags Input files -->
+  <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/examples/assets/app.css">
+
+  <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+  <link rel="stylesheet" type="text/css" href="plugins/bootstrap-fullscreen-select/css/bootstrap-fullscreen-select.css">
+
+  <!-- BOOTSTRAP-Choosen Autocomplete -->
+  <link rel="stylesheet" href="plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+  <!-- BOOTSTRAP-Datepicker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+
+  <!-- DATE-RANGE PICKER -->
+  <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
   <!-- Font Awesome -->
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">-->
   <link rel="stylesheet" href="dist-palta/css/font-awesome.css">
+
+  <!-- Icono-Arg -->  
   <link rel="stylesheet" href="dist-palta/css/icono-arg.css">
 
-  <!-- Ionicons -->
+  <!-- IONICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- fullCalendar 2.2.5-->
+
+  <!-- FULL CALENDAR 2.2.5-->
   <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
   <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
   <!-- Theme style -->
@@ -30,8 +52,6 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
   folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
-  <!-- datepicker -->
-  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
   <!-- iCheck -->
   
   <!-- PALTA dist-palta -->
@@ -39,15 +59,7 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="dist-palta/css/palta.css">
   <link rel="stylesheet" href="dist-palta/css/palta-adminLTE.css">    
-  
-  <link rel="stylesheet" href="dist-palta/css/prism.css">    
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  
+    
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
@@ -452,55 +464,27 @@
 <script src="plugins/iCheck/icheck.min.js"></script>
 <!-- Page Script -->
 
-<!-- FORM -->
+
+<!-- FORMS AGENDA -->
+
+<!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+<script type="text/javascript" src="plugins/bootstrap-fullscreen-select/js/bootstrap-fullscreen-select.js"></script>
+
 <!-- InputMask -->
 <script src="plugins/input-mask/jquery.inputmask.js"></script>
 <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
 <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
-<script>
-    //Datemask dd/mm/yyyy
-    $("#dateinput").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
-    $("[data-mask]").inputmask();
-</script>
+
 <!-- Datepicker -->
 <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
 <script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
-<script type="application/javascript">
-  $('input.dateinput').datepicker({
-    language: "es",
-    autoclose: true,
-    clearBtn: true,
-    orientation: "top"
-  });
-</script>
-
 
 <!-- AGENDA mapa js -->
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
 
-<!-- First option select grey -->
-  <script type="text/javascript">
-    $(document).ready(function(){
-    $(".select-agenda").on("change", function(){
-    $(this).css("color", "#000");
-    });
-    });
-/*function setColor(dropdown){
-    dropdown.style.color = "black";
-};*/
-  </script>
-<!-- First option select grey -->
-  <script type="text/javascript">
-    $(document).ready(function(){
-    $(".btn-mobileSelect-gen").on("change", function(){
-    $(this).css("color", "#000");
-    });
-    });
-/*function setColor(dropdown){
-    dropdown.style.color = "black";
-};*/
-  </script>
+<!-- Activadores -->
+<script src="dist-palta/js/app.js"></script>
 
 
 </body>
