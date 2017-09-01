@@ -266,6 +266,10 @@
   font-weight: 500;
 }
 
+.agenda-ubicacion-club i.fa {
+  margin-top: 25px;
+}
+
 .agenda-resultados .agenda-resultados-titulo{
   font-size: 25px; 
   font-weight: 500;
