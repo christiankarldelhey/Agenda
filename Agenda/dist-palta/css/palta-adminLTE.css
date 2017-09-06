@@ -17,6 +17,10 @@
   padding-left: 20px;
 }
 
+.distribuir {
+  display:flex !important;
+  justify-content: space-around !important;
+}
 
 /* BOTON AGREGAR NUEVO - FA */
 
@@ -226,20 +230,114 @@
 
 
 
-
-
-
-
 /*AGENDA*/
 
+
+/*HEADER-AGENDA*/
+/*Header-palta-admin*/
+
+
+header .dropdown-toggle .fa-user {
+  font-size: 24px !important;
+  margin-top:5px;
+}
+
+.header-palta-admin {
+  background-color:#FFFFFF;
+  z-index:15000;
+}
+
+.header-palta-admin nav.navbar-default {
+  z-index: 10000;
+}
+
+.header-palta-admin a.sidebar-toggle {
+  margin-top: 1.4em; 
+  float: left; 
+  padding-right: 7px;
+}
+
+.header-palta-admin .sidebar-admin {
+  margin-top:-4px; 
+  padding:5px 10px;
+}
+
+.header-palta-admin .sidebar-admin .fa-bars {
+  color:#ddd;
+}
+
+.header-palta-admin .dropdown-mensajes i.fa {
+  color:#FFCC00;
+}
+
+.header-palta-admin .agenda-nombre-usuario {
+  pointer-events: none;
+}
+
+/*MAIN-FOOTER*/
+
+.main-footer {
+    border-top: 0px;
+}
+.main-footer .img-ministerio{
+  float:right !important;
+}
+
+.main-footer .main-footer-titulo p{
+  text-transform: uppercase;
+}
+
+.main-footer .main-footer-contacto p {
+  margin-top: 20px;
+}
+
+
+/*Agenda Landing Jumbotron*/
+
+.agenda-landing-jumbotron .jumbotron_body .container .row {
+  margin-top:100px;
+}
+
+.agenda-landing-jumbotron h1 {
+  margin-bottom:50px;
+}
+
+.agenda-landing-jumbotron span b {
+  font-size: 25px !important;
+}
+
+.panel-footer {
+  border-top: 0px;
+}
+
+/*Tabla-eventos*/
 
 .tabla-eventos table tr .fa {
   font-size: 25px;
 }
 
-.distribuir {
-  display:flex !important;
-  justify-content: space-around !important;
+.tabla-eventos .logos-redes .fa {
+  margin: auto 5px !important;
+}
+
+/*Agenda Newsletter*/
+
+.agenda-newsletter {
+  position:relative;
+}
+
+.agenda-newsletter-left {
+  margin-top:60px;
+}
+
+.agenda-newsletter-left-2{
+  margin-top:100px;
+}
+
+.agenda-newsletter-right {
+  background-color: #DAF1F8; 
+  padding-top:30px !important;
+  padding-bottom:30px !important;
 }
 
 .chevron-agenda {
@@ -256,6 +354,15 @@
   margin-top:100px;
 }
 
+/*Paneles herramientas*/
+
+.panels-herramientas .panel-heading {
+  color:white;
+}
+
+
+/*Agenda-ubicacion-club*/
+
 .agenda-ubicacion-club .fa {
   color:#FEC221;
   font-size:60px;
@@ -270,17 +377,50 @@
   margin-top: 25px;
 }
 
+/*Panel-evento fullpage*/
+
+.panel-agenda-evento .panel-body .evento-img {
+  height:360px;
+  background-size:cover;
+}
+
+/*Agenda Resultados*/
+
 .agenda-resultados .agenda-resultados-titulo{
   font-size: 25px; 
   font-weight: 500;
 }
 
+/*Agenda-datos-perfil*/
+
 .agenda-datos-perfil td {
   border-bottom: 1px solid #f4f4f4;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(244, 244, 244);
-    border-top: 0px !important;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(244, 244, 244);
+  border-top: 0px !important;
+}
+
+/*BUSCADOR DE CLUBES - Panel-Club*/
+
+.panel-club .panel-club-titulo{
+  font-size: 25px; 
+  font-weight: 500;
+}
+
+.panel-club i{
+  font-size: 30px; 
+  color:#FEC221;
+}
+
+.panel-club-contenido {
+  margin-top: 15px;
+}
+
+.panel-club .panel-footer {
+  border-top:0px; 
+  padding:10px; 
+  margin:0px;
 }
 
 /*FULLSCREEN SELECT-ESTILOS*/
@@ -330,22 +470,6 @@
   background-color: white !important;
 }
 
-/*HEADER-AGENDA*/
-
-header .dropdown-toggle .fa-user {
-  font-size: 24px !important;
-  margin-top:5px;
-}
-
-/*MAIN-FOOTER*/
-
-.main-footer {
-    border-top: 0px;
-}
-.img-ministerio{
-  float:right !important;
-}
-
 /*FORMS*/
 
 /*gris primera opcion del select*/
@@ -361,7 +485,6 @@ header .dropdown-toggle .fa-user {
 }
 
 
-
 /*AGENDA-MEDIA QUERIES*/
 
 /* Extra Small Devices, Phones */
@@ -374,4 +497,4 @@ header .dropdown-toggle .fa-user {
   float:left !important;
 }
 
-  }
+}

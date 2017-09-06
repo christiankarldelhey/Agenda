@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>dashboard editar proyecto</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <link rel="shortcut icon" href="dist-palta/img/favicon.ico">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <!-- BOOTSTRAP -->
@@ -59,14 +59,14 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="dist-palta/css/palta.css">
   <link rel="stylesheet" href="dist-palta/css/palta-adminLTE.css">    
-    
+  
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
-    <div class="wrapper">
+  <div class="wrapper">
 
-    <header class="header" style="background-color:#FFFFFF; z-index:15000;">
-      <nav class="navbar navbar-default" style="z-index: 10000;">
+    <header class="header header-palta-admin" style="">
+      <nav class="navbar navbar-default" style="">
         <div class="container">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -78,11 +78,11 @@
                 <span class="icon-bar"></span>
               </button>
 
-              <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" style="margin-top: 1.4em; float: left; padding-right: 7px;">
-                <div class="navbar-toggle collapsed pull-right" style="margin-top:-4px; padding:5px 10px;"><i class="fa fa-bars" style="color:#ddd;"></i>
+              <a href="#" class="sidebar-toggle sidebar" data-toggle="offcanvas" role="button" style="">
+                <div class="navbar-toggle collapsed pull-right sidebar-admin" style=""><i class="fa fa-bars" style=""></i>
                 </div>
               </a>
-              <a class="navbar-brand" href="#"><img src="dist-palta/img/logoMinisterio.png" height="50" alt="">
+              <a class="navbar-brand" href="#"><img src="dist-palta/img/logoministerio.png" height="50" alt="">
               </a>
 
             </div>
@@ -90,300 +90,353 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-
-                            <!--
-                            <li class="dropdown messages-menu">
-                                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                                <i class="fa fa-bars"></i>
-                                </a>              
-                            </li>
-                          -->
-                          <li class="dropdown messages-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-envelope-o"></i>
-                              <span class="label label-success">4</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li class="header">You have 4 messages</li>
-                              <li>
-                                <ul class="menu">
-                                  <li>
-                                    <a href="#">
-                                      <div class="pull-left">
-                                        <i class="fa fa-arrow-circle-o-right fa-2x" style="color:#FFCC00;"></i>
-                                      </div>
-                                      <h4>
-                                        Support Team
-                                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                      </h4>
-                                      <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                  </li>
-                                  
-                                </ul>
-                              </li>
-                              <li class="footer"><a href="#">See All Messages</a>
-                              </li>
-                            </ul>
-                          </li>
-
-                          <li class="dropdown notifications-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-bell-o"></i>
-                              <span class="label label-warning">10</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li class="header">You have 10 notifications</li>
-                              <li>
-                                <ul class="menu">
-                                  <li>
-                                    <a href="#">
-                                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
-                                    </a>
-                                  </li>
-                                  
-                                </ul>
-                              </li>
-                              <li class="footer"><a href="#">View all</a>
-                              </li>
-                            </ul>
-                          </li>
-                          
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="" style="pointer-events:none;">MOBEATS SA</a></li>
-                              
-                              <li>
-                                <a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/historialCupones">Historial de Cupones
-                                  <span style="background-color: white;color: #337ab7;" class="badge" id="totalCupones">14</span>
-                                </a>
-                              </li>
-                              <li role="separator" class="divider m-t-0 m-b-0"></li>
-                              <li><a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/cerrarSession" class="">CERRAR SESIÓN</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                  </div>
-                </nav>
-              </header>
-
-              <aside class="main-sidebar">
-                <!-- sidebar: style can be found in sidebar.less -->
-                <section class="sidebar">
-
-                  <!-- /.search form -->
-                  <!-- sidebar menu: : style can be found in sidebar.less -->
-                  <ul class="sidebar-menu side-bar-margin">
-                    <!--<li class="header">SIDE NAVIGATOR</li>-->
-                    <li class="treeview hidden-xs">
-                      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                        <i class="fa fa-bars"></i>
-                        <span class="sr-only">Toggle navigation</span>
-                      </a>          
-                    </li>
-                    <li class="treeview">
-                      <a href="dashboard-socio.html">
-                        <!--<i class="fa fa-home"></i> <span>Inicio</span>-->
-                        <i class="fa fa-home"></i> <span>Inicio</span>
-                      </a>
-                    </li>
-                    <li class="treeview">
-                      <a href="dashboard-socio-Mi-Perfil.html">
-                        <i class="fa fa-user"></i>
-                        <span>Mi Perfil</span>
-                      </a>
-                    </li>
-                    <li class="treeview">
-                      <a href="Dashboard-socio-mi-proyecto.html">
-                        <i class="fa fa-briefcase"></i>
-                        <span>Mi Proyecto</span>
-                      </a>
-                    </li>
-                    <li class="treeview">
-                      <a href="#">
-                        <i class="fa fa-calendar"></i>
-                        <span>Eventos</span>
-                        <span class="pull-right-container">
-                          <i class="fa fa-angle-left pull-right"></i>
-                        </span>
-                      </a>
-                      <ul class="treeview-menu">
-                        <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Crear</a></li>
-                        <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Editar</a></li>
+                <li class="dropdown messages-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="label label-success">4</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-mensajes">
+                    <li class="header">You have 4 messages</li>
+                    <li>
+                      <ul class="menu">
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                            </div>
+                            <h4>
+                              Support Team
+                              <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                            </div>
+                            <h4>
+                              AdminLTE Design Team
+                              <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                            </div>
+                            <h4>
+                              Developers
+                              <small><i class="fa fa-clock-o"></i> Today</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                            </div>
+                            <h4>
+                              Sales Department
+                              <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="pull-left">
+                              <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                            </div>
+                            <h4>
+                              Reviewers
+                              <small><i class="fa fa-clock-o"></i> 2 days</small>
+                            </h4>
+                            <p>Why not buy a new awesome theme?</p>
+                          </a>
+                        </li>
                       </ul>
                     </li>
-                    <li class="treeview">
-                      <a href="#">
-                        <i class="fa fa-book"></i>
-                        <span>Capacitaciones</span>
-                        <span class="pull-right-container">
-                          <i class="fa fa-angle-left pull-right"></i>
-                        </span>
-                      </a>
-                      <ul class="treeview-menu">
-                        <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Crear</a></li>
-                        <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Editar</a></li>
-                      </ul>
+                    <li class="footer"><a href="#">See All Messages</a>
                     </li>
                   </ul>
-                </section>
-                <!-- /.sidebar -->
-              </aside>
+                </li>
+
+                <li class="dropdown notifications-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="label label-warning">10</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="header">You have 10 notifications</li>
+                    <li>
+                      <ul class="menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-users text-red"></i> 5 new members joined
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-user text-red"></i> You changed your username
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="footer"><a href="#">View all</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="agenda-nombre-usuario"><a href="" style="">MOBEATS SA</a></li>
+
+                    <li>
+                      <a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/historialCupones">Historial de Cupones
+                        <span style="background-color: white;color: #337ab7;" class="badge" id="totalCupones">14</span>
+                      </a>
+                    </li>
+                    <li role="separator" class="divider m-t-0 m-b-0"></li>
+                    <li><a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/cerrarSession" class="">CERRAR SESIÓN</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </nav>
+    </header>
+
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu side-bar-margin">
+          <!--<li class="header">SIDE NAVIGATOR</li>-->
+          <li class="treeview hidden-xs">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle navigation</span>
+            </a>          
+          </li>
+          <li class="treeview">
+            <a href="dashboard-socio.html">
+              <!--<i class="fa fa-home"></i> <span>Inicio</span>-->
+              <i class="fa fa-home"></i> <span>Inicio</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="dashboard-socio-Mi-Perfil.html">
+              <i class="fa fa-user"></i>
+              <span>Mi Perfil</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="Dashboard-socio-mi-proyecto.html">
+              <i class="fa fa-briefcase"></i>
+              <span>Mi Proyecto</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-calendar"></i>
+              <span>Eventos</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Crear</a></li>
+              <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Editar</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Capacitaciones</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Crear</a></li>
+              <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Editar</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
 
 
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Main content -->
-    <section class="container"><!-- se cambió container por content!!! -->
-      <div class="row">
-        <!-- /.col -->
-        <div class="col-md-12">
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="container"><!-- se cambió container por content!!! -->
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-md-12">
             <h3>Editar Perfil</h3>
 
 
             <div class="panel panel-default panel-admin">
-                <div class="panel-heading bg-primary text-white text-left">
-                    <h4>Datos Personales</h4>
-                </div>
+              <div class="panel-heading bg-primary text-white text-left">
+                <h4>Datos Personales</h4>
+              </div>
 
-                <div class="panel-body text-left">
-                    <form class="form-azul m-t-2">
-                        <div class="col-md-8 col-md-offset-2">
+              <div class="panel-body text-left">
+                <form class="form-azul m-t-2">
+                  <div class="col-md-8 col-md-offset-2">
 
-                            <div class="form-group col-md-12 m-b-0">
-                                <label class="control-label">Nombre y Apellido</label>
-                                <input class="form-control" type="" name="" placeholder="Nombre y Apellido">
-                            </div>
-
-                            <div class="form-group col-md-12 m-b-0">
-                              <label class="col-xs-12 control-label p-x-0">Foto de perfil</label>
-                              <label class="control-label btn p-x-2 m-b-2 btn-link btn-file">
-                                SELECCIONA ARCHIVO 
-                                <input type="file" style="display: none;">
-                            </label>
-                        </div>
-
-                        <div class="form-group col-md-12">
-                             <label class="control-label">Sexo</label>
-                            <div class="btn-group btn-group-justified btn-sm p-l-0 p-r-0 m-t-0" data-toggle="buttons">
-
-                                <label id="" class="btn btn-default active">
-                                    <input type="radio" name="userType" id="userTypePyme" value="pyme" class="hidden" checked=""> FEMENINO
-                                </label>
-
-                                <label id="" class="btn btn-default">
-                                    <input type="radio" name="userType" id="userTypeProvider" value="provider" class="hidden"> MASCULINO
-                                    </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group col-md-12 m-b-0">
-                            <label class="control-label">Fecha de Nacimiento</label>
-                            <div class="input-group">
-                                <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
-                                <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.input group -->
-
-                        <div class="form-group m-t-2 col-md-12 m-b-0">
-                            <label class="control-label">Email </label>
-                            <input class="form-control" type="" name="">
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                            <label  class="control-label">DNI/PASAPORTE</label>
-                                <div class="btn-group btn-group-justified btn-sm p-x-0 p-y-0 m-t-0" data-toggle="buttons">
-
-                                <label id="" class="btn btn-default active">
-                                    <input type="radio" name="userType" id="userTypePyme" value="pyme" class="hidden" checked=""> DNI
-                                </label>
-
-                                <label id="" class="btn btn-default">
-                                    <input type="radio" name="userType" id="userTypeProvider" value="provider" class="hidden"> PASAPORTE
-                                </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="control-label">Número </label>
-                                <input class="form-control" type="" name="">
-                            </div>
-                        </div>
-
-                        <div class="form-group col-md-12 m-b-0">
-                            <label class="control-label">Número de identificación </label>
-                            <input class="form-control" type="" name="">
-                        </div>
-
-                        <h3 class="col-md-12 m-b-2">Lugar de Residencia</h3>
-
-                        <div class="form-group col-md-12 m-b-0">
-                            <label class="control-label">Provincia</label>
-                            <select class="form-control select-agenda" id="">
-                                <option value="" disabled selected>Seleccionar..</option>
-                                <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group col-md-12 m-b-0">
-                            <label class="control-label">Localidad </label>
-                            <input class="form-control" type="" name="" placeholder="Ingresar localidad">
-                        </div>
-
-                        <label class="control-label col-xs-12">Teléfono</label>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input class="form-control" type="" name="" placeholder="Cod. área">
-                            </div>                                    
-                        </div>
-
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <input class="form-control" type="" name="" placeholder="Número">
-                            </div>                                       
-                        </div>
-
+                    <div class="form-group col-md-12 m-b-0">
+                      <label class="control-label">Nombre y Apellido</label>
+                      <input class="form-control" type="" name="" placeholder="Nombre y Apellido">
                     </div>
-                    <div class="col-xs-12">
-                        <a href="dashboard-socio-editar-mi-perfil-2.html"><button class="btn btn-success center-block text-center">guardar</button></a>
-                    </div>                       
+
+                    <div class="form-group col-md-12 m-b-0">
+                      <label class="col-xs-12 control-label p-x-0">Foto de perfil</label>
+                      <label class="control-label btn p-x-2 m-b-2 btn-link btn-file">
+                        SELECCIONA ARCHIVO 
+                        <input type="file" style="display:none;">
+                      </label>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                     <label class="control-label">Sexo</label>
+                     <div class="btn-group btn-group-justified btn-sm p-l-0 p-r-0 m-t-0" data-toggle="buttons">
+
+                      <label id="" class="btn btn-default active">
+                        <input type="radio" name="userType" id="userTypePyme" value="pyme" class="hidden" checked=""> FEMENINO
+                      </label>
+
+                      <label id="" class="btn btn-default">
+                        <input type="radio" name="userType" id="userTypeProvider" value="provider" class="hidden"> MASCULINO
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-12 m-b-0">
+                    <label class="control-label">Fecha de Nacimiento</label>
+                    <div class="input-group">
+                      <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
+                      <div class="input-group-addon bg-primary p-l-2 p-r-2">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.input group -->
+
+                  <div class="form-group m-t-2 col-md-12 m-b-0">
+                    <label class="control-label">Email </label>
+                    <input class="form-control" type="" name="">
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label  class="control-label">DNI/PASAPORTE</label>
+                      <div class="btn-group btn-group-justified btn-sm p-x-0 p-y-0 m-t-0" data-toggle="buttons">
+
+                        <label id="" class="btn btn-default active">
+                          <input type="radio" name="userType" id="userTypePyme" value="pyme" class="hidden" checked=""> DNI
+                        </label>
+
+                        <label id="" class="btn btn-default">
+                          <input type="radio" name="userType" id="userTypeProvider" value="provider" class="hidden"> PASAPORTE
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Número </label>
+                      <input class="form-control" type="" name="">
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-12 m-b-0">
+                    <label class="control-label">Número de identificación </label>
+                    <input class="form-control" type="" name="">
+                  </div>
+
+                  <h3 class="col-md-12 m-b-2">Lugar de Residencia</h3>
+
+                  <div class="form-group col-md-12 m-b-0">
+                    <label class="control-label">Provincia</label>
+                    <select class="form-control select-agenda" id="">
+                      <option value="" disabled selected>Seleccionar..</option>
+                      <option>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group col-md-12 m-b-0">
+                      <label class="control-label">Localidad </label>
+                      <input class="form-control" type="" name="" placeholder="Ingresar localidad">
+                    </div>
+
+                    <label class="control-label col-xs-12">Teléfono</label>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control" type="" name="" placeholder="Cod. área">
+                      </div>                                    
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <input class="form-control" type="" name="" placeholder="Número">
+                      </div>                                       
+                    </div>
+
+                  </div>
+                  <div class="col-xs-12">
+                    <a href="dashboard-socio-editar-mi-perfil-2.html"><button class="btn btn-success center-block text-center">guardar</button></a>
+                  </div>                       
                 </div>
-            </div>
-        </form>
+              </div>
+            </form>
+          </div>
+        </div>            
+
+
+      </div>
+
     </div>
-</div>            
 
-
-</div>
-
-</div>
-
-</section>
-<!-- /.content -->
+  </section>
+  <!-- /.content -->
 </div>
 
 <!-- /.content-wrapper -->
@@ -399,7 +452,7 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
         <ul>
-          <li><p style="text-transform: uppercase;">El Ministerio</p><p></p></li>
+          <li class="main-footer-titulo"><p style="">El Ministerio</p><p></p></li>
           <li><a href="http://www.produccion.gob.ar/institucional/mision/">Misión</a></li>
           <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">El Ministro</a></li>
           <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">Organigrama</a></li>
@@ -409,7 +462,7 @@
       </div>
       <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
         <ul>
-          <li><p style="text-transform: uppercase;">Trámites y Servicios</p></li>
+          <li class="main-footer-titulo"><p style="">Trámites y Servicios</p></li>
           <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">Todos</a></li>
           <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PyMEs</a></li>
           <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">Emprendedores</a></li>
@@ -420,7 +473,7 @@
       </div>
       <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
         <ul>
-          <li><p style="text-transform: uppercase;">Sala de Prensa</p></li>
+          <li class="main-footer-titulo"><p style="">Sala de Prensa</p></li>
           <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">Comunicados</a></li>
           <li><a href="http://www.produccion.gob.ar/sala-de-prensa/fotos/">Fotos</a></li>
           <li><a href="http://www.produccion.gob.ar/sala-de-prensa/videos/">Videos</a></li>
@@ -428,7 +481,7 @@
       </div>
       <div class="col-md-3 col-sm-6 text-xs-center text-md-left">
         <ul>
-          <li><p style="text-transform: uppercase;">Contacto</p></li>
+          <li class="main-footer-titulo"><p style="">Contacto</p></li>
           <li><a href="http://dna2-tests.produccion.gob.ar/dna2bpm/perfil/sugerencias" target="_blank">Ayuda</a></li>
           <li><a href="mailto:info@produccion.gob.ar" target="_blank">info@producción.gob.ar</a></li>
           <li><p>+54 (011) 4349.3697</p></li>
@@ -436,14 +489,14 @@
         </ul>
       </div>
     </div>
-      <div class="row">
-    <div class="col-md-8 pull-left">
-      <p style="margin-top: 20px;"> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
+    <div class="row">
+      <div class="col-md-8 pull-left main-footer-contacto">
+        <p style=""> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
+      </div>
+      <div class="col-md-4 img-ministerio">
+        <img src="dist-palta/img/logoministerio.png" height="50">
+      </div>
     </div>
-    <div class="col-md-4 img-ministerio">
-      <img src="img/logoministerio.png" height="50">
-    </div>
-  </div>
   </div>
 
 </footer>

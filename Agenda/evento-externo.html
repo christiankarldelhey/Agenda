@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>dashboard editar proyecto</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <link rel="shortcut icon" href="dist-palta/img/favicon.ico">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <!-- BOOTSTRAP -->
@@ -57,55 +57,169 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="dist-palta/css/palta.css">
   <link rel="stylesheet" href="dist-palta/css/palta-adminLTE.css">    
-    
+  
 </head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-default">
+  <header class="header header-palta-admin" style="">
+    <nav class="navbar navbar-default" style="">
       <div class="container">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Burger</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Burger</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-                <a class="navbar-brand" href="#"><img src="img/logoMinisterio.png" height="50" alt=""></a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CLUBES <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="http://www.produccion.gob.ar/institucional/mision/">MISIÓN</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">EL MINISTRO</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">ORGANIGRAMA</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/secretarias/secretaria-de-industria-2/">SECRETARIAS</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/secretaria-de-industria/">SUBSECRETARIAS</a></li>
-                      <li><a href="http://www.produccion.gob.ar/casasdelaproduccion/">CASAS DE LA PRODUCCIÓN</a></li>
+            <a href="#" class="sidebar-toggle sidebar" data-toggle="offcanvas" role="button" style="">
+              <div class="navbar-toggle collapsed pull-right sidebar-admin" style=""><i class="fa fa-bars" style=""></i>
+              </div>
+            </a>
+            <a class="navbar-brand" href="#"><img src="dist-palta/img/logoministerio.png" height="50" alt="">
+            </a>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu dropdown-mensajes">
+                  <li class="header">You have 4 messages</li>
+                  <li>
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            AdminLTE Design Team
+                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Developers
+                            <small><i class="fa fa-clock-o"></i> Today</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Sales Department
+                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Reviewers
+                            <small><i class="fa fa-clock-o"></i> 2 days</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
                     </ul>
                   </li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTICIAS <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">TODOS</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PYME</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">EMPRENDEDOR</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">CONSUMIDOR</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-comercio/">COMERCIO</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">INDUSTRIA</a></li>
-                      <li><a href="http://www.produccion.gob.ar/instituciones-productivas/">INSTITUCIONES</a></li>
-                    </ul>
+                  <li class="footer"><a href="#">See All Messages</a>
                   </li>
-                    <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">MINISTERIO</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+              </li>
+
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> 5 new members joined
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="agenda-nombre-usuario"><a href="" style="">MOBEATS SA</a></li>
+
+                  <li>
+                    <a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/historialCupones">Historial de Cupones
+                      <span style="background-color: white;color: #337ab7;" class="badge" id="totalCupones">14</span>
+                    </a>
+                  </li>
+                  <li role="separator" class="divider m-t-0 m-b-0"></li>
+                  <li><a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/cerrarSession" class="">CERRAR SESIÓN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
       </div>
@@ -114,7 +228,7 @@
 
   <main role="main">
 
-    <section class="jumbotron eventos" style="background-image: url('../img/events.jpg');">
+    <section class="jumbotron eventos" style="background-image: url('dist-palta/img/modernizacion.jpg');">
       <div class="container">
         <div class="row">
           <div class="blue-overlay col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
@@ -135,225 +249,230 @@
     </section>
 
 
-  <section class="agenda-ubicacion-club text-center bg-white">
-  <div class="container">
-  <div class="col-md-8 col-md-offset-2 m-y-2"> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <i class="fa fa-map-marker" aria-hidden="true"></i>
-      <p>Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-    </div>
-    <div class="col-md-3 text-center">
-      <i class="fa fa-clock-o" aria-hidden="true"></i>
-      <p>Horario de atención:<br> L a V de 10 a 21. <br> Sábados de 10 a 23</p>
-    </div>
-    <div class="col-md-3 text-center">
-      <i class="fa fa-phone" aria-hidden="true"></i>
-      <p>00 54 0351 5353756</p>
-    </div>
-    <div class="col-md-3 text-center">
-      <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      <p>clubunc@secyt.unc.edu.ar <br>
-      Coordinador: Pedro Pérez</p>
-    </div>
-    </div>
+    <section class="agenda-ubicacion-club text-center bg-white">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2 m-y-2"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-center">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+            </div>
+            <div class="col-md-3 text-center">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <p>Horario de atención:<br> L a V de 10 a 21. <br> Sábados de 10 a 23</p>
+            </div>
+            <div class="col-md-3 text-center">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>00 54 0351 5353756</p>
+            </div>
+            <div class="col-md-3 text-center">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <p>clubunc@secyt.unc.edu.ar <br>
+                Coordinador: Pedro Pérez</p>
+              </div>
+            </div>
 
-  </section>
+          </section>
 
-<section class="container tabla-eventos p-b-0">
-  <div class="">
-      <h3 class="text-center m-b-2">Actividades</h3>
-      <div class="col-xs-12">
-      </div><!-- row -->
+          <section class="container-fluid bg-gclaro tabla-eventos">
+            <div class="container">
+              <h3 class="text-center m-b-2">Actividades</h3>
 
-      <div class="row">
-          <div class="col-sm-12 table-responsive">
-              <table class="table dataTable no-footer" id="tablaCupones" role="grid" aria-describedby="tablaCupones_info">
-                <thead>
-                  <tr role="row">
-                      <th class="sorting_asc" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Nro. de Voucher: activate to sort column descending" style="width: 160px;">Fecha y hora</th>
-                      <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Detalle: activate to sort column ascending" style="width: 300px;">Evento</th>
-                      <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Proforma: activate to sort column ascending" style="width: 435px;">Dirección</th>
-                      <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Factura: activate to sort column ascending" style="width: 150px;"></th>
-                  </tr>
-              </thead>
+              <div class="row">
+                <div class="col-sm-12 table-responsive">
+                  <table class="table dataTable no-footer" id="tablaCupones" role="grid" aria-describedby="tablaCupones_info">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting_asc" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Nro. de Voucher: activate to sort column descending" style="width: 160px;">Fecha y hora</th>
+                        <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Detalle: activate to sort column ascending" style="width: 300px;">Evento</th>
+                        <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Proforma: activate to sort column ascending" style="width: 435px;">Dirección</th>
+                        <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Factura: activate to sort column ascending" style="width: 200px;"></th>
+                      </tr>
+                    </thead>
 
-              <tbody class="list">
+                    <tbody class="list">
 
 
-                <tr role="row" class="odd">
-                    <th scope="row" class="sorting_1"><p class="text-info"><b>21 de Mayo <br> 16:30 hs </b></p></th>
-                    <td class="">
-                        <p class="m-r-2">Expoagro</p>      
-                    </td>
-                    <td class=""><p>Pabellón Amarillo, La Rural <br> <small>Av Santa Fe 1234, CABA</small></p></td>
-                    <td class=""> 
-                        <i class="col-md-3 text-center fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
-                    </td>
-                </tr>
+                      <tr role="row" class="odd">
+                        <th scope="row" class="sorting_1"><p class="text-info"><b>21 de Mayo <br> 16:30 hs </b></p></th>
+                        <td class="">
+                          <p class="m-r-2">Expoagro</p>      
+                        </td>
+                        <td class=""><p>Pabellón Amarillo, La Rural <br> <small>Av Santa Fe 1234, CABA</small></p></td>
+                        <td class="logos-redes"> 
+                          <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                        </td>
+                      </tr>
 
 
-                <tr role="row" class="odd">
-                    <th scope="row" class="sorting_1"><p class="text-info"><b>23 de Mayo <br> 18:00 hs </b></p></th>
-                    <td class="">
-                        <p class="m-r-2">Fuck Up Night - Corrientes</p>      
-                    </td>
-                    <td class=""><p>Centro Cultural Abasto <br> <small>Av Corrientes 3452, CABA</small></p></td>
-                    <td class=""> 
-                        <i class="col-md-3 text-center fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
-                    </td>
-                </tr>
+                      <tr role="row" class="odd">
+                        <th scope="row" class="sorting_1"><p class="text-info"><b>23 de Mayo <br> 18:00 hs </b></p></th>
+                        <td class="">
+                          <p class="m-r-2">Fuck Up Night - Corrientes</p>      
+                        </td>
+                        <td class=""><p>Centro Cultural Abasto <br> <small>Av Corrientes 3452, CABA</small></p></td>
+                        <td class="logos-redes"> 
+                          <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                        </td>
+                      </tr>
 
-                <tr role="row" class="odd">
-                    <th scope="row" class="sorting_1"><p class="text-info"><b>23 de Mayo <br> 19:30 hs </b></p></th>
-                    <td class="">
-                        <p class="m-r-2">Aula Virtual Segundo encuentro mensual de estudiantes de la Provincia de Buenos Aires</p>      
-                    </td>
-                    <td class=""><p>Centro Cultural Recoleta <br> <small>Junín 1930, CABA</small></p></td>
-                    <td class=""> 
-                        <i class="col-md-3 text-center fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
-                    </td>
-                </tr>
-
-
-                <tr role="row" class="odd">
-                    <th scope="row" class="sorting_1"><p class="text-info"><b>3 de Septiembre <br> 13:30 hs </b></p></th>
-                    <td class="">
-                        <p class="m-r-2">Taller de Modelo de negocios</p>      
-                    </td>
-                    <td class=""><p>Centro cultural Pasaje Dardo Rocha <br> <small>Calle 50 entre 6 y 7, La Plata</small></p></td>
-                    <td class=""> 
-                        <i class="col-md-3 text-center fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                        <i class="col-md-3 text-center fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-</div>
-</section>
-
-    <section class="map-container">
-      <h3 class="text-center m-b-2">¿Cómo Llegar?</h3>
-      <div id="map"></div>
-    </section>
-
-  </main>
-
-  <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
-
-<footer class="main-footer bg-gclaro">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
-        <ul>
-          <li><p style="text-transform: uppercase;">El Ministerio</p><p></p></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/mision/">Misión</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">El Ministro</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">Organigrama</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/secretarias/">Secretarías</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/">Subsecretarías</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
-        <ul>
-          <li><p style="text-transform: uppercase;">Trámites y Servicios</p></li>
-          <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">Todos</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PyMEs</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">Emprendedores</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">Consumidor</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-comercio/">Comercio Exterior</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">Industria</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
-        <ul>
-          <li><p style="text-transform: uppercase;">Sala de Prensa</p></li>
-          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">Comunicados</a></li>
-          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/fotos/">Fotos</a></li>
-          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/videos/">Videos</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left">
-        <ul>
-          <li><p style="text-transform: uppercase;">Contacto</p></li>
-          <li><a href="http://dna2-tests.produccion.gob.ar/dna2bpm/perfil/sugerencias" target="_blank">Ayuda</a></li>
-          <li><a href="mailto:info@produccion.gob.ar" target="_blank">info@producción.gob.ar</a></li>
-          <li><p>+54 (011) 4349.3697</p></li>
-          <li><p>0800.333.7963</p></li>
-        </ul>
-      </div>
-    </div>
-      <div class="row">
-    <div class="col-md-8 pull-left">
-      <p style="margin-top: 20px;"> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
-    </div>
-    <div class="col-md-4 img-ministerio">
-      <img src="img/logoministerio.png" height="50">
-    </div>
-  </div>
-  </div>
-
-</footer>
+                      <tr role="row" class="odd">
+                        <th scope="row" class="sorting_1"><p class="text-info"><b>23 de Mayo <br> 19:30 hs </b></p></th>
+                        <td class="">
+                          <p class="m-r-2">Aula Virtual Segundo encuentro mensual de estudiantes de la Provincia de Buenos Aires</p>      
+                        </td>
+                        <td class=""><p>Centro Cultural Recoleta <br> <small>Junín 1930, CABA</small></p></td>
+                        <td class="logos-redes"> 
+                          <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                        </td>
+                      </tr>
 
 
-<!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- Slimscroll -->
-<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
-<!-- mapinit -->
-<script src="dist/js/mapinit.js"></script>
-<!-- iCheck -->
-<script src="plugins/iCheck/icheck.min.js"></script>
-<!-- Page Script -->
+                      <tr role="row" class="odd">
+                        <th scope="row" class="sorting_1"><p class="text-info"><b>3 de Septiembre <br> 13:30 hs </b></p></th>
+                        <td class="">
+                          <p class="m-r-2">Taller de Modelo de negocios</p>      
+                        </td>
+                        <td class=""><p>Centro cultural Pasaje Dardo Rocha <br> <small>Calle 50 entre 6 y 7, La Plata</small></p></td>
+                        <td class="logos-redes"> 
+                          <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                          <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                        </td>
+                      </tr>
 
 
-<!-- FORMS AGENDA -->
 
-<!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
-<script type="text/javascript" src="plugins/bootstrap-fullscreen-select/js/bootstrap-fullscreen-select.js"></script>
-
-<!-- InputMask -->
-<script src="plugins/input-mask/jquery.inputmask.js"></script>
-<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
-
-<!-- Datepicker -->
-<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
-<script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
-
-<!-- AGENDA mapa js -->
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
-
-<!-- Activadores -->
-<script src="dist-palta/js/app.js"></script>
+                    </tbody>
 
 
-</body>
-</html>
+                  </table></div></div>
+
+
+
+
+                </div>
+              </section>
+
+              <section class="map-container">
+                <h3 class="text-center m-b-2">¿Cómo Llegar?</h3>
+                <div id="map"></div>
+              </section>
+
+            </main>
+
+            <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
+
+            <footer class="main-footer bg-gclaro">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                    <ul>
+                      <li class="main-footer-titulo"><p style="">El Ministerio</p><p></p></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/mision/">Misión</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">El Ministro</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">Organigrama</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/secretarias/">Secretarías</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/">Subsecretarías</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                    <ul>
+                      <li class="main-footer-titulo"><p style="">Trámites y Servicios</p></li>
+                      <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">Todos</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PyMEs</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">Emprendedores</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">Consumidor</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-comercio/">Comercio Exterior</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">Industria</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                    <ul>
+                      <li class="main-footer-titulo"><p style="">Sala de Prensa</p></li>
+                      <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">Comunicados</a></li>
+                      <li><a href="http://www.produccion.gob.ar/sala-de-prensa/fotos/">Fotos</a></li>
+                      <li><a href="http://www.produccion.gob.ar/sala-de-prensa/videos/">Videos</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6 text-xs-center text-md-left">
+                    <ul>
+                      <li class="main-footer-titulo"><p style="">Contacto</p></li>
+                      <li><a href="http://dna2-tests.produccion.gob.ar/dna2bpm/perfil/sugerencias" target="_blank">Ayuda</a></li>
+                      <li><a href="mailto:info@produccion.gob.ar" target="_blank">info@producción.gob.ar</a></li>
+                      <li><p>+54 (011) 4349.3697</p></li>
+                      <li><p>0800.333.7963</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8 pull-left main-footer-contacto">
+                    <p style=""> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
+                  </div>
+                  <div class="col-md-4 img-ministerio">
+                    <img src="dist-palta/img/logoministerio.png" height="50">
+                  </div>
+                </div>
+              </div>
+
+            </footer>
+
+
+            <!-- jQuery 2.2.3 -->
+            <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+            <!-- Bootstrap 3.3.6 -->
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+            <!-- Slimscroll -->
+            <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+            <!-- FastClick -->
+            <script src="plugins/fastclick/fastclick.js"></script>
+            <!-- AdminLTE App -->
+            <script src="dist/js/app.min.js"></script>
+            <!-- mapinit -->
+            <script src="dist/js/mapinit.js"></script>
+            <!-- iCheck -->
+            <script src="plugins/iCheck/icheck.min.js"></script>
+            <!-- Page Script -->
+
+
+            <!-- FORMS AGENDA -->
+
+            <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+            <script type="text/javascript" src="plugins/bootstrap-fullscreen-select/js/bootstrap-fullscreen-select.js"></script>
+
+            <!-- InputMask -->
+            <script src="plugins/input-mask/jquery.inputmask.js"></script>
+            <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+            <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+            <!-- Datepicker -->
+            <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+            <script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+
+            <!-- AGENDA mapa js -->
+
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
+
+            <!-- Activadores -->
+            <script src="dist-palta/js/app.js"></script>
+
+
+          </body>
+          </html>

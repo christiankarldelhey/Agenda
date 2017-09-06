@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>dashboard editar proyecto</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <link rel="shortcut icon" href="dist-palta/img/favicon.ico">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <!-- BOOTSTRAP -->
@@ -57,55 +57,169 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="dist-palta/css/palta.css">
   <link rel="stylesheet" href="dist-palta/css/palta-adminLTE.css">    
-    
+  
 </head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-default">
+  <header class="header header-palta-admin" style="">
+    <nav class="navbar navbar-default" style="">
       <div class="container">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Burger</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Burger</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-                <a class="navbar-brand" href="#"><img src="img/logoMinisterio.png" height="50" alt=""></a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CLUBES <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="http://www.produccion.gob.ar/institucional/mision/">MISIÓN</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">EL MINISTRO</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">ORGANIGRAMA</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/secretarias/secretaria-de-industria-2/">SECRETARIAS</a></li>
-                      <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/secretaria-de-industria/">SUBSECRETARIAS</a></li>
-                      <li><a href="http://www.produccion.gob.ar/casasdelaproduccion/">CASAS DE LA PRODUCCIÓN</a></li>
+            <a href="#" class="sidebar-toggle sidebar" data-toggle="offcanvas" role="button" style="">
+              <div class="navbar-toggle collapsed pull-right sidebar-admin" style=""><i class="fa fa-bars" style=""></i>
+              </div>
+            </a>
+            <a class="navbar-brand" href="#"><img src="dist-palta/img/logoministerio.png" height="50" alt="">
+            </a>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu dropdown-mensajes">
+                  <li class="header">You have 4 messages</li>
+                  <li>
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            AdminLTE Design Team
+                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Developers
+                            <small><i class="fa fa-clock-o"></i> Today</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Sales Department
+                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <i class="fa fa-arrow-circle-o-right fa-2x" style=""></i>
+                          </div>
+                          <h4>
+                            Reviewers
+                            <small><i class="fa fa-clock-o"></i> 2 days</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li>
                     </ul>
                   </li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTICIAS <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">TODOS</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PYME</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">EMPRENDEDOR</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">CONSUMIDOR</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-comercio/">COMERCIO</a></li>
-                      <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">INDUSTRIA</a></li>
-                      <li><a href="http://www.produccion.gob.ar/instituciones-productivas/">INSTITUCIONES</a></li>
-                    </ul>
+                  <li class="footer"><a href="#">See All Messages</a>
                   </li>
-                    <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">MINISTERIO</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+              </li>
+
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> 5 new members joined
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="agenda-nombre-usuario"><a href="" style="">MOBEATS SA</a></li>
+
+                  <li>
+                    <a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/historialCupones">Historial de Cupones
+                      <span style="background-color: white;color: #337ab7;" class="badge" id="totalCupones">14</span>
+                    </a>
+                  </li>
+                  <li role="separator" class="divider m-t-0 m-b-0"></li>
+                  <li><a href="http://digitalizatupyme.produccion.gob.ar/digitalizacionPyME/cerrarSession" class="">CERRAR SESIÓN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
       </div>
@@ -114,13 +228,13 @@
 
   <main role="main">
 
-      <section class="jumbotron " style="background-image: url('img/modernizacion.jpg');">
-        <div class="jumbotron_body">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1 text-center">
-                <h1 class=" m-b-3">Buscador de Clubes emprendedores</h1>
-                <div class="col-md-12">
+    <section class="jumbotron " style="background-image: url('dist-palta/img/modernizacion.jpg');">
+      <div class="jumbotron_body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <h1 class=" m-b-3">Buscador de Clubes emprendedores</h1>
+              <div class="col-md-12">
                 <div class="col-xs-12 center-block">
                   <form>
                     <div class="form-group col-md-5">
@@ -143,497 +257,482 @@
                       <button class="btn bg-gclaro text-primary btn-block">BUSCAR</button>
                     </div>
                   </form>
-                  </div> <!-- form wrapper -->
-                </div>
-                </div>
+                </div> <!-- form wrapper -->
               </div>
             </div>
           </div>
-          <div class="overlay"></div>
-        </section>
-
-<section class="agenda-resultados container">
-  <div class="row panels-row">
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');" style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p  class="" style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p  class="" style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p  class="" style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-          
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-            <a class="panel panel-default panel-icon panel-secondary" href="">
-              <div class="panel-heading"  style="background-image: url('img/modernizacion.jpg');">
-                
-              </div>
-              <div class="panel-body text-left">
-                <p style="font-size: 25px; font-weight: 500;" class="m-l-1">Club UNC</p>
-                <ul class="list-unstyled m-b-0">
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
-                    </div>
-                  </li>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">clubunc@secyt.unc.edu.ar</p>
-                    </div>
-                  <li class="col-xs-12 p-x-0">
-                    <div class="text-center col-xs-2">
-                      <i  style="font-size: 30px; color:#FEC221;" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-10 p-x-0 m-x-0">
-                      <p style="margin-top: 15px;">00 54 0351 5353756</p>
-                    </div>
-                  </li>
-                </ul>
-                </div>
-                <div class="panel-footer" style="border-top:0px; padding:10px; margin:0px;">
-                <button class="btn btn-info text-center center-block">Ver más</button>
-                </div>
-              
-            </a>
-          </div>
-
-          <div class="col-sm-8 aligner col-sm-offset-2">
-        <div class="" id="">
-          <ul class="center-block pagination">
-            <li class="paginate_button previous disabled" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">&lt;</a></li>
-            <li class="paginate_button active"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">1</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">2</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">3</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">4</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">5</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">6</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">7</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">8</a></li>
-            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">9</a></li>
-            <li class="paginate_button" id=""><a href="#" aria-controls="" data-dt-idx="2" tabindex="0">&gt;</a></li>
-          </ul>
         </div>
       </div>
-</section>
+      <div class="overlay"></div>
+    </section>
 
-  </main>
+    <section class="agenda-resultados container">
+      <div class="row panels-row">
 
-  <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a class="panel panel-default panel-icon panel-secondary" href="">
+            <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+            </div>
+            <div class="panel-body text-left panel-club">
+              <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+              <ul class="list-unstyled m-b-0">
+                <li class="col-xs-12 p-x-0">
+                  <div class="text-center col-xs-2">
+                    <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-10 p-x-0 m-x-0">
+                    <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                  </div>
+                </li>
+                <li class="col-xs-12 p-x-0">
+                  <div class="text-center col-xs-2">
+                    <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-10 p-x-0 m-x-0">
+                    <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                  </div>
+                  <li class="col-xs-12 p-x-0">
+                    <div class="text-center col-xs-2">
+                      <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-10 p-x-0 m-x-0">
+                      <p class="panel-club-contenido">00 54 0351 5353756</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="panel-footer" style="">
+                <button class="btn btn-info text-center center-block">Ver más</button>
+              </div>
+            </a>
+          </div>
 
-<footer class="main-footer bg-gclaro">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
-        <ul>
-          <li><p style="text-transform: uppercase;">El Ministerio</p><p></p></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/mision/">Misión</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">El Ministro</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">Organigrama</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/secretarias/">Secretarías</a></li>
-          <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/">Subsecretarías</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
-        <ul>
-          <li><p style="text-transform: uppercase;">Trámites y Servicios</p></li>
-          <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">Todos</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PyMEs</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">Emprendedores</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">Consumidor</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-comercio/">Comercio Exterior</a></li>
-          <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">Industria</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
-        <ul>
-          <li><p style="text-transform: uppercase;">Sala de Prensa</p></li>
-          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">Comunicados</a></li>
-          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/fotos/">Fotos</a></li>
-          <li><a href="http://www.produccion.gob.ar/sala-de-prensa/videos/">Videos</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 text-xs-center text-md-left">
-        <ul>
-          <li><p style="text-transform: uppercase;">Contacto</p></li>
-          <li><a href="http://dna2-tests.produccion.gob.ar/dna2bpm/perfil/sugerencias" target="_blank">Ayuda</a></li>
-          <li><a href="mailto:info@produccion.gob.ar" target="_blank">info@producción.gob.ar</a></li>
-          <li><p>+54 (011) 4349.3697</p></li>
-          <li><p>0800.333.7963</p></li>
-        </ul>
-      </div>
-    </div>
-      <div class="row">
-    <div class="col-md-8 pull-left">
-      <p style="margin-top: 20px;"> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
-    </div>
-    <div class="col-md-4 img-ministerio">
-      <img src="img/logoministerio.png" height="50">
-    </div>
-  </div>
-  </div>
-
-</footer>
-
-<!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- Slimscroll -->
-<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
-<!-- mapinit -->
-<script src="dist/js/mapinit.js"></script>
-<!-- iCheck -->
-<script src="plugins/iCheck/icheck.min.js"></script>
-<!-- Page Script -->
-
-
-<!-- FORMS AGENDA -->
-
-<!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
-<script type="text/javascript" src="plugins/bootstrap-fullscreen-select/js/bootstrap-fullscreen-select.js"></script>
-
-<!-- InputMask -->
-<script src="plugins/input-mask/jquery.inputmask.js"></script>
-<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
-
-<!-- Datepicker -->
-<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
-<script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
-
-<!-- AGENDA mapa js -->
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
-
-<!-- Activadores -->
-<script src="dist-palta/js/app.js"></script>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <a class="panel panel-default panel-icon panel-secondary" href="">
+              <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+              </div>
+              <div class="panel-body text-left panel-club">
+                <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                <ul class="list-unstyled m-b-0">
+                  <li class="col-xs-12 p-x-0">
+                    <div class="text-center col-xs-2">
+                      <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-10 p-x-0 m-x-0">
+                      <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                    </div>
+                  </li>
+                  <li class="col-xs-12 p-x-0">
+                    <div class="text-center col-xs-2">
+                      <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-10 p-x-0 m-x-0">
+                      <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                    </div>
+                    <li class="col-xs-12 p-x-0">
+                      <div class="text-center col-xs-2">
+                        <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-10 p-x-0 m-x-0">
+                        <p class="panel-club-contenido">00 54 0351 5353756</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="panel-footer" style="">
+                  <button class="btn btn-info text-center center-block">Ver más</button>
+                </div>
+              </a>
+            </div>
 
 
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a class="panel panel-default panel-icon panel-secondary" href="">
+                <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+                </div>
+                <div class="panel-body text-left panel-club">
+                  <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                  <ul class="list-unstyled m-b-0">
+                    <li class="col-xs-12 p-x-0">
+                      <div class="text-center col-xs-2">
+                        <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-10 p-x-0 m-x-0">
+                        <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                      </div>
+                    </li>
+                    <li class="col-xs-12 p-x-0">
+                      <div class="text-center col-xs-2">
+                        <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-10 p-x-0 m-x-0">
+                        <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                      </div>
+                      <li class="col-xs-12 p-x-0">
+                        <div class="text-center col-xs-2">
+                          <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-10 p-x-0 m-x-0">
+                          <p class="panel-club-contenido">00 54 0351 5353756</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="panel-footer" style="">
+                    <button class="btn btn-info text-center center-block">Ver más</button>
+                  </div>
+                </a>
+              </div>
 
 
-</body>
-</html>
+
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <a class="panel panel-default panel-icon panel-secondary" href="">
+                  <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+                  </div>
+                  <div class="panel-body text-left panel-club">
+                    <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                    <ul class="list-unstyled m-b-0">
+                      <li class="col-xs-12 p-x-0">
+                        <div class="text-center col-xs-2">
+                          <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-10 p-x-0 m-x-0">
+                          <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                        </div>
+                      </li>
+                      <li class="col-xs-12 p-x-0">
+                        <div class="text-center col-xs-2">
+                          <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-10 p-x-0 m-x-0">
+                          <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                        </div>
+                        <li class="col-xs-12 p-x-0">
+                          <div class="text-center col-xs-2">
+                            <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-xs-10 p-x-0 m-x-0">
+                            <p class="panel-club-contenido">00 54 0351 5353756</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="panel-footer" style="">
+                      <button class="btn btn-info text-center center-block">Ver más</button>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <a class="panel panel-default panel-icon panel-secondary" href="">
+                    <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+                    </div>
+                    <div class="panel-body text-left panel-club">
+                      <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                      <ul class="list-unstyled m-b-0">
+                        <li class="col-xs-12 p-x-0">
+                          <div class="text-center col-xs-2">
+                            <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-xs-10 p-x-0 m-x-0">
+                            <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                          </div>
+                        </li>
+                        <li class="col-xs-12 p-x-0">
+                          <div class="text-center col-xs-2">
+                            <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-xs-10 p-x-0 m-x-0">
+                            <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                          </div>
+                          <li class="col-xs-12 p-x-0">
+                            <div class="text-center col-xs-2">
+                              <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 p-x-0 m-x-0">
+                              <p class="panel-club-contenido">00 54 0351 5353756</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="panel-footer" style="">
+                        <button class="btn btn-info text-center center-block">Ver más</button>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a class="panel panel-default panel-icon panel-secondary" href="">
+                      <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+                      </div>
+                      <div class="panel-body text-left panel-club">
+                        <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                        <ul class="list-unstyled m-b-0">
+                          <li class="col-xs-12 p-x-0">
+                            <div class="text-center col-xs-2">
+                              <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 p-x-0 m-x-0">
+                              <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                            </div>
+                          </li>
+                          <li class="col-xs-12 p-x-0">
+                            <div class="text-center col-xs-2">
+                              <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 p-x-0 m-x-0">
+                              <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                            </div>
+                            <li class="col-xs-12 p-x-0">
+                              <div class="text-center col-xs-2">
+                                <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-xs-10 p-x-0 m-x-0">
+                                <p class="panel-club-contenido">00 54 0351 5353756</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="panel-footer" style="">
+                          <button class="btn btn-info text-center center-block">Ver más</button>
+                        </div>
+                      </a>
+                    </div>
+
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="panel panel-default panel-icon panel-secondary" href="">
+                        <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+                        </div>
+                        <div class="panel-body text-left panel-club">
+                          <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                          <ul class="list-unstyled m-b-0">
+                            <li class="col-xs-12 p-x-0">
+                              <div class="text-center col-xs-2">
+                                <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-xs-10 p-x-0 m-x-0">
+                                <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                              </div>
+                            </li>
+                            <li class="col-xs-12 p-x-0">
+                              <div class="text-center col-xs-2">
+                                <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-xs-10 p-x-0 m-x-0">
+                                <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                              </div>
+                              <li class="col-xs-12 p-x-0">
+                                <div class="text-center col-xs-2">
+                                  <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-xs-10 p-x-0 m-x-0">
+                                  <p class="panel-club-contenido">00 54 0351 5353756</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="panel-footer" style="">
+                            <button class="btn btn-info text-center center-block">Ver más</button>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a class="panel panel-default panel-icon panel-secondary" href="">
+                          <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+                          </div>
+                          <div class="panel-body text-left panel-club">
+                            <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                            <ul class="list-unstyled m-b-0">
+                              <li class="col-xs-12 p-x-0">
+                                <div class="text-center col-xs-2">
+                                  <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-xs-10 p-x-0 m-x-0">
+                                  <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                                </div>
+                              </li>
+                              <li class="col-xs-12 p-x-0">
+                                <div class="text-center col-xs-2">
+                                  <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-xs-10 p-x-0 m-x-0">
+                                  <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                                </div>
+                                <li class="col-xs-12 p-x-0">
+                                  <div class="text-center col-xs-2">
+                                    <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="col-xs-10 p-x-0 m-x-0">
+                                    <p class="panel-club-contenido">00 54 0351 5353756</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="panel-footer" style="">
+                              <button class="btn btn-info text-center center-block">Ver más</button>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                          <a class="panel panel-default panel-icon panel-secondary" href="">
+                            <div class="panel-heading" style="background-image: url('dist-palta/img/modernizacion.jpg');">  
+                            </div>
+                            <div class="panel-body text-left panel-club">
+                              <p class="panel-club-titulo" style="" class="m-l-1">Club UNC</p>
+                              <ul class="list-unstyled m-b-0">
+                                <li class="col-xs-12 p-x-0">
+                                  <div class="text-center col-xs-2">
+                                    <i  style="" class="fa fa-map-marker m-t-1 text-center" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="col-xs-10 p-x-0 m-x-0">
+                                    <p class="panel-club-contenido" style="">Haya de la Torre casi esquina Velez Sarsfield, Córdoba</p>
+                                  </div>
+                                </li>
+                                <li class="col-xs-12 p-x-0">
+                                  <div class="text-center col-xs-2">
+                                    <i  style="" class="fa fa-envelope-o m-t-1 text-center" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="col-xs-10 p-x-0 m-x-0">
+                                    <p  class="panel-club-contenido">clubunc@secyt.unc.edu.ar</p>
+                                  </div>
+                                  <li class="col-xs-12 p-x-0">
+                                    <div class="text-center col-xs-2">
+                                      <i  style="" class="fa fa-phone m-t-1 text-center" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xs-10 p-x-0 m-x-0">
+                                      <p class="panel-club-contenido">00 54 0351 5353756</p>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="panel-footer" style="">
+                                <button class="btn btn-info text-center center-block">Ver más</button>
+                              </div>
+                            </a>
+                          </div>
+
+                          <div class="col-sm-8 aligner col-sm-offset-2">
+                            <div class="" id="">
+                              <ul class="center-block pagination">
+                                <li class="paginate_button previous disabled" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">&lt;</a></li>
+                                <li class="paginate_button active"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">1</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">2</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">3</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">4</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">5</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">6</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">7</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">8</a></li>
+                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">9</a></li>
+                                <li class="paginate_button" id=""><a href="#" aria-controls="" data-dt-idx="2" tabindex="0">&gt;</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </section>
+
+                      </main>
+
+                      <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
+
+                      <footer class="main-footer bg-gclaro">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                              <ul>
+                                <li class="main-footer-titulo"><p style="">El Ministerio</p><p></p></li>
+                                <li><a href="http://www.produccion.gob.ar/institucional/mision/">Misión</a></li>
+                                <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">El Ministro</a></li>
+                                <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">Organigrama</a></li>
+                                <li><a href="http://www.produccion.gob.ar/institucional/secretarias/">Secretarías</a></li>
+                                <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/">Subsecretarías</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                              <ul>
+                                <li class="main-footer-titulo"><p style="">Trámites y Servicios</p></li>
+                                <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">Todos</a></li>
+                                <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PyMEs</a></li>
+                                <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">Emprendedores</a></li>
+                                <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">Consumidor</a></li>
+                                <li><a href="http://www.produccion.gob.ar/tramites-comercio/">Comercio Exterior</a></li>
+                                <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">Industria</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                              <ul>
+                                <li class="main-footer-titulo"><p style="">Sala de Prensa</p></li>
+                                <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">Comunicados</a></li>
+                                <li><a href="http://www.produccion.gob.ar/sala-de-prensa/fotos/">Fotos</a></li>
+                                <li><a href="http://www.produccion.gob.ar/sala-de-prensa/videos/">Videos</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-3 col-sm-6 text-xs-center text-md-left">
+                              <ul>
+                                <li class="main-footer-titulo"><p style="">Contacto</p></li>
+                                <li><a href="http://dna2-tests.produccion.gob.ar/dna2bpm/perfil/sugerencias" target="_blank">Ayuda</a></li>
+                                <li><a href="mailto:info@produccion.gob.ar" target="_blank">info@producción.gob.ar</a></li>
+                                <li><p>+54 (011) 4349.3697</p></li>
+                                <li><p>0800.333.7963</p></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-8 pull-left main-footer-contacto">
+                              <p style=""> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
+                            </div>
+                            <div class="col-md-4 img-ministerio">
+                              <img src="dist-palta/img/logoministerio.png" height="50">
+                            </div>
+                          </div>
+                        </div>
+
+                      </footer>
+
+                      <!-- jQuery 2.2.3 -->
+                      <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+                      <!-- Bootstrap 3.3.6 -->
+                      <script src="bootstrap/js/bootstrap.min.js"></script>
+                      <!-- Slimscroll -->
+                      <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+                      <!-- FastClick -->
+                      <script src="plugins/fastclick/fastclick.js"></script>
+                      <!-- AdminLTE App -->
+                      <script src="dist/js/app.min.js"></script>
+                      <!-- mapinit -->
+                      <script src="dist/js/mapinit.js"></script>
+                      <!-- iCheck -->
+                      <script src="plugins/iCheck/icheck.min.js"></script>
+                      <!-- Page Script -->
+
+
+                      <!-- FORMS AGENDA -->
+
+                      <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+                      <script type="text/javascript" src="plugins/bootstrap-fullscreen-select/js/bootstrap-fullscreen-select.js"></script>
+
+                      <!-- InputMask -->
+                      <script src="plugins/input-mask/jquery.inputmask.js"></script>
+                      <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+                      <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+                      <!-- Datepicker -->
+                      <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+                      <script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+
+                      <!-- AGENDA mapa js -->
+
+                      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
+
+                      <!-- Activadores -->
+                      <script src="dist-palta/js/app.js"></script>
+
+
+
+
+                    </body>
+                    </html>
