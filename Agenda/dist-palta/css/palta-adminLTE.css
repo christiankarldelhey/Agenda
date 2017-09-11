@@ -327,7 +327,8 @@ header .dropdown-toggle .fa-user {
 }
 
 .agenda-newsletter-left {
-  margin-top:60px;
+  margin-top:30px;
+  margin-bottom: 30px;
 }
 
 .agenda-newsletter-left-2{
@@ -336,8 +337,8 @@ header .dropdown-toggle .fa-user {
 
 .agenda-newsletter-right {
   background-color: #DAF1F8; 
-  padding-top:30px !important;
-  padding-bottom:30px !important;
+  padding-top:10px !important;
+  padding-bottom:10px !important;
 }
 
 .chevron-agenda {
@@ -351,7 +352,19 @@ header .dropdown-toggle .fa-user {
 
 .agenda-newsletter .fa-envelope-o {
   font-size: 80px;
-  margin-top:100px;
+  margin-top: 20px;
+}
+
+.agenda-newsletter-right .panel-body  {
+  padding-bottom: 0px !important;
+}
+
+.agenda-newsletter-right .panel-footer {
+  padding-top: 0px !important;
+}
+
+.agenda-newsletter form {
+  margin-bottom: 0px !important;
 }
 
 /*Paneles herramientas*/
@@ -432,6 +445,8 @@ header .dropdown-toggle .fa-user {
   line-height: 1.7;
 }
 
+
+
 /*CAROUSEL*/
 
 .carousel-inner .active.left { left: -25%; }
@@ -478,10 +493,29 @@ header .dropdown-toggle .fa-user {
 }
 
 .select-agenda>option:not(:first-child) {
-    color: #000;
+  color: #000;
 }
 .select-agenda>option:first-hand {
-    color: #767676;
+  color: #767676;
+}
+
+.btn-mobileSelect-gen {
+  color:#767676;
+}
+
+.negro {
+  color:black !important;
+}
+
+/*.gris {
+  color:#767676 !important;
+}*/
+
+/*PRIMERA OPCION DE BOOTSTRAP-FULL-SELECT*/
+
+.mobileSelect-control:first-child {
+  color:#767676;
+  display:none !important;
 }
 
 

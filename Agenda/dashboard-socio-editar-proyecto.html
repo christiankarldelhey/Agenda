@@ -315,12 +315,12 @@
                   <div class="col-md-8 col-md-offset-2">
 
                     <div class="col-md-12">
-                      <div class="form-group">
+                      <div id="1" class="form-group">
                         <label class="control-label">Nombre de tu proyecto o emprendimiento</label>
                         <select style="" class="select-agenda menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
                           <optgroup>
-                            <!-- <option class="primero" selected disabled hidden>Seleccioná..</option> -->
-                            <option value="1" style=" "  >Quiero emprender, pero no tengo ninguna idea</option>
+                            <option>Seleccioná..</option>
+                            <option value="1" style=" ">Quiero emprender, pero no tengo ninguna idea</option>
                             <option value="2">Tengo una idea y quiero desarrollarla</option>
                             <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
                             <option value="4">Ya tengo un emprendimiento en marcha</option>
@@ -335,6 +335,7 @@
                         <label class="control-label">Sector Productivo</label>
                         <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
                           <optgroup>
+                            <option class="primero" selected disabled data-hidden="true">Seleccioná..</option>
                             <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
                             <option value="2">Tengo una idea y quiero desarrollarla</option>
                             <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
@@ -351,6 +352,7 @@
                         <label class="control-label">¿Cómo se encuentra constituido tu emprendimiento?</label>
                         <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
                           <optgroup>
+                            <option class="primero" selected disabled data-hidden="true">Seleccioná..</option>
                             <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
                             <option value="2">Tengo una idea y quiero desarrollarla</option>
                             <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
@@ -371,6 +373,7 @@
                         <label class="control-label">Antigüedad del proyecto <span class="text-muted"> (opcional)</span> </label>
                         <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
                           <optgroup>
+                            <option class="primero" selected disabled data-hidden="true">Seleccioná..</option>
                             <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
                             <option value="2">Tengo una idea y quiero desarrollarla</option>
                             <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
@@ -393,6 +396,7 @@
                         <label class="control-label">Nivel de facturación promedio mensual </label>
                         <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
                           <optgroup>
+                            <option class="primero" selected disabled data-hidden="true">Seleccioná..</option>
                             <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
                             <option value="2">Tengo una idea y quiero desarrollarla</option>
                             <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
@@ -408,6 +412,7 @@
                         <label class="control-label">Mi proyecto necesita </label>
                         <select class="menuSingle form-control mobileSelect"  data-title="Seleccioná una opción" data-style="default">
                           <optgroup>
+                            <option selected disabled data-hidden="true">Seleccioná..</option>
                             <option value="1" >Quiero emprender, pero no tengo ninguna idea</option>
                             <option value="2">Tengo una idea y quiero desarrollarla</option>
                             <option value="3">Tengo un proyecto en desarrollo (prototipo o producto mínimo viable)</option>
@@ -489,7 +494,7 @@
       <div class="col-md-8 pull-left main-footer-contacto">
         <p style=""> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
       </div>
-      <div class="col-md-4 img-ministerio">
+      <div class="col-md-4 col-xs-12 img-ministerio">
         <img src="dist-palta/img/logoministerio.png" height="50">
       </div>
     </div>
@@ -535,6 +540,17 @@
 <!-- Activadores -->
 <script src="dist-palta/js/app.js"></script>
 
+
+<script>
+$(function () {
+   $("#1 .btn-mobileSelect-gen").click(function () {
+   $("#1 .btn-mobileSelect-gen").addClass("negro");
+   });
+});
+</script>
+<!-- <script>
+  $("div:contains('Seleccioná..')").addClass("gris");
+</script>  -->
 
 
 </body>
