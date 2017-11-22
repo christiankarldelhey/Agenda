@@ -1,0 +1,809 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>dashboard editar proyecto</title>
+  <link rel="shortcut icon" href="dist-palta/img/favicon.ico">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- BOOTSTRAP -->
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/templates.css">
+
+  <!-- FORMULARIO -->
+
+  <!-- iCheck -->
+  <link href="plugins/iCheck/all.css" rel="stylesheet">
+
+  <!-- BOOTSTRAP-Tags Input files -->
+  <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/examples/assets/app.css">
+
+  <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+  <link rel="stylesheet" type="text/css" href="plugins/bootstrap-fullscreen-select/css/bootstrap-fullscreen-select.css">
+
+  <!-- BOOTSTRAP-Choosen Autocomplete -->
+  <link rel="stylesheet" href="plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+  <!-- BOOTSTRAP-Datepicker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+
+  <!-- DATE-RANGE PICKER -->
+  <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="dist-palta/css/font-awesome.css">
+
+  <!-- Icono-Arg -->  
+  <link rel="stylesheet" href="dist-palta/css/icono-arg.css">
+
+  <!-- IONICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- FULL CALENDAR 2.2.5-->
+  <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
+  <!-- Theme style -->
+
+  <!-- ADMIN-LTE dist -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+  folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <!-- iCheck -->
+  
+  <!-- PALTA dist-palta -->
+  <link rel="stylesheet" href="dist-palta/css/poncho.min.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="dist-palta/css/palta.css">
+  <link rel="stylesheet" href="dist-palta/css/palta-adminLTE.css">    
+  
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Burger</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#"><img src="dist-palta/img/logoministerio.png" height="50" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CLUBES <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.produccion.gob.ar/institucional/mision/">MISIÓN</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">EL MINISTRO</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">ORGANIGRAMA</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/secretarias/secretaria-de-industria-2/">SECRETARIAS</a></li>
+                      <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/secretaria-de-industria/">SUBSECRETARIAS</a></li>
+                      <li><a href="http://www.produccion.gob.ar/casasdelaproduccion/">CASAS DE LA PRODUCCIÓN</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTICIAS <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">TODOS</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PYME</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">EMPRENDEDOR</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">CONSUMIDOR</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-comercio/">COMERCIO</a></li>
+                      <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">INDUSTRIA</a></li>
+                      <li><a href="http://www.produccion.gob.ar/instituciones-productivas/">INSTITUCIONES</a></li>
+                    </ul>
+                  </li>
+                    <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">MINISTERIO</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section class="jumbotron " style="background-image: url('dist-palta/img/Landing_Jumbotron_AgendaEmprendedora.jpg');">
+      <div class="jumbotron_body">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+              <h1>Ecosistema emprendedor</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl. Fusce lorem sem, vehicula sed pellentesque            </p></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
+      
+        <h3 class="text-center m-b-2">Encontrá las instituciones más cercanas a tu ubicación</h3>
+        <section class="mapa-ecosistema bg-white">
+          <!-- SEARCH OPEN SIDEBAR-->
+            <div class="col-xs-12 mapa-search text-primary"> 
+                <div class="input-group search-input" style=""> 
+                    
+                      <span  id="sidebarCollapse" class="input-group-addon p-r-1">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                      </span>
+                      
+                    <input class="form-control form-text" placeholder="Buscar" autofocus="" type="text" id="edit-keys" name="keys" value="" autocomplete="off" spellcheck="false" dir="auto" style="">
+                    <span id="sidebarCollapse-2" class="input-group-addon">
+                      <i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside id="sidebar" class="p-x-0">
+                <div class="col-xs-12 aside-header text-primary">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                  <span> &nbsp Acciones</span>
+                  <span id="dismiss">
+                    <i class="fa fa-chevron-left pull-right" aria-hidden="true"></i>
+                  </span>
+                </div>
+
+                <div class="aside-main">
+                    <div class="col-xs-12">
+                      <div class="col-xs-2">
+                        <i class= "fa fa-map-marker" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-10 p-l-0">
+                        <span class="b-400">Seleccionar puntos a visualizar</span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <div class="col-xs-2">                      
+                        <i class="fa fa-building-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-10 p-l-0">
+                        <span class="b-400">Sobre las instituciones</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 ecosistema-pills">
+                      <ul class=" nav nav-pills nav-stacked   m-x-0 ">
+                        <li><a href=""><small class="aside-main-list">Incubadoras</small></a></li>
+                        <li><a href=""><small class="aside-main-list">Aceleradoras</small></a></li>
+                        <li><a href=""><small class="aside-main-list">Clubes de emprendedores</small></a></li>
+                        <li><a href=""><small class="aside-main-list">Universidades</small></a></li>
+                        <li><a href=""><small class="aside-main-list">Casas de la producción</small></a></li>
+                        <li><a href=""><small class="aside-main-list">Ciudades para emprender</small></a></li>
+                        <li><a href=""><small class="aside-main-list">Asociaciones</small></a></li>
+                      </ul> 
+                    </div>
+
+                
+
+                    <div class="col-xs-12">
+                      <div class="col-xs-2">
+                        <i class= "fa fa-thumb-tack" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-10 p-l-0">
+                        <span class="b-400">Añadir nuevo punto</span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <div class="col-xs-2">
+                        <i class= "fa fa-pencil" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-10 p-l-0">
+                        <span class="b-400">Reportar o sugerir una edición <br> en el mapa</span>
+                      </div>
+                    </div>
+
+                </div> <!-- aside main -->
+            <div class="col-xs-12 p-x-0">
+                <div class=" bg-primary text-white text-center p-y-1" style="margin-top: 20px;">
+                  <p style="padding: 0px 20px; ">Conocé toda la información referida a las instituciones que forman parte del ecosistema emprendedor y encontrá la más cercana a tu ubicación.</p>
+                </div>
+              </div>
+
+            </aside> <!-- fin sidebar -->
+
+            <!-- SIDEBAR-2 -->
+
+            <aside id="sidebar-2">
+
+              <!-- CONTENIDO PUNTOS -->
+              <div id="contenido-puntos" style="display:none;">
+
+                <div style="padding-top: 80px; padding-bottom:30px;">
+                  <span class="p-x-1" style="margin-left:23px;"> <i class= "fa fa-map-marker" aria-hidden="true"></i></span>
+                  <span>Seleccionar puntos a visualizar</span>
+                  <span id="dismiss-2" class="p-x-1"> <i class="pull-right fa fa-times" style="padding-right:32px;" aria-hidden="true"></i></span>
+                </div>
+
+                <div class="aside-main">
+                     
+                  <ul class="list-unstyled lista-puntos">
+                    <li class="">
+                      <span class="form-check check-punto">
+                        <label class="active">
+                          <input class="form-check-input" type="checkbox" value="">
+                        </label>
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                    <li class="">
+                      <span class="form-check check-punto">
+                          <input class="form-check-input" type="checkbox" value="">
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                    <li class="">
+                      <span class="form-check check-punto">
+                          <input class="form-check-input" type="checkbox" value="">
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                    <li class="">
+                      <span class="form-check check-punto">
+                          <input class="form-check-input" type="checkbox" value="">
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                    <li class="">
+                      <span class="form-check check-punto">
+                          <input class="form-check-input" type="checkbox" value="">
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                    <li class="">
+                      <span class="form-check check-punto">
+                          <input class="form-check-input" type="checkbox" value="">
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                    <li class="">
+                      <span class="form-check check-punto">
+                          <input class="form-check-input" type="checkbox" value="">
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                    <li class="">
+                      <span class="form-check check-punto">
+                          <input class="form-check-input" type="checkbox" value="">
+                      </span>
+                      <span class="etiqueta-punto pull-right" style="">
+                        <span class="p-y-1">
+                          <i class="fa fa-circle text-success m-y-0 p-y-0" aria-hidden="true"></i>
+                        </span>Incubadoras
+                      </span>
+                    </li>
+                  </ul>
+                </div> <!-- aside main -->
+
+            <div class="col-xs-12 p-x-0">
+              <div class=" bg-warning text-white text-center p-y-1 m-t-0" style="margin-top: 20px;">
+                  <p class="" style="padding: 0px 20px; color:white;">Si sos alguna de estas instituciones y no aparecés en el mapa, podés formar parte del ecosistema emprendedor</p>
+                  <button class="btn btn-sm btn-primary center-block">añadir punto en el mapa</button>
+                </div>
+              </div>
+
+              </div><!-- contenido puntos -->
+
+              <!-- FIN CONTENIDO PUNTOS -->
+
+              <!-- CLUB EMPRENDEDOR -->
+
+              <div id="club">
+                <div class="bg-danger" style="padding-top: 80px;">
+                  <div class="col-xs-12 bg-danger">
+                    <div class="col-xs-10">
+                      <h3>Club emprendedor <br> de Liniers</h3>
+                      <p><a href="">Saber más sobre clubes emprendedores</a></p>
+                    </div>
+                    <div class="col-xs-2">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-xs-12 p-x-0 m-x-0" style="background-color: #F6F6F6;">
+                      <ul class="list-unstyled p-l-2 p-y-1">
+                        <li>
+                          <span><i class= "fa fa-map-marker text-primary" aria-hidden="true"></i></span>
+                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                        </li>
+                        <li>
+                          <span><i class= "fa fa-phone text-primary" aria-hidden="true"></i></span>
+                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                        </li>
+                        <li>
+                          <span><i class= "fa fa-envelope text-primary" aria-hidden="true"></i></span>
+                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                        </li>
+                        <li>
+                          <span><i class= "fa fa-user text-primary" aria-hidden="true"></i></span>
+                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                        </li>
+
+                      </ul>
+                  </div>
+
+                  <div class="col-xs-12 p-t-1">
+                    <small>Próximo evento: <strong>09/05 - 18hs</strong> </small>
+                    <h4 class="m-t-0 text-primary">Semana del Coworking</h4>
+                    <hr class="m-y-1">
+                  </div>
+                  
+
+                  <div class="col-xs-12 p-t-2">
+                    <p><strong>Información</strong></p>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+                  </div>
+                  
+              </div>
+
+              
+              <div class="col-xs-12 m-t-2">
+                <hr class="m-b-1 m-t-0">
+                <p><strong>Instituciones cercanas</strong></p>
+                <ul class="text-info">
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                </ul>
+
+              </div>
+
+              <!-- FIN CLUB EMPRENDEDOR -->
+
+            </aside>
+
+
+
+            <!-- MAPA -->
+            <div id="content" class="mapa-ecosistema-2 col-xs-12 p-l-0">      
+                
+              <div id="map_container" style="position:relative;">
+
+              </div>
+              <div id="map">
+
+              </div>
+            </div>
+
+          </div> <!-- contenido puntos -->
+
+          <div class="overlay"></div>
+
+      </section>
+
+
+              <section class="container-fluid bg-gclaro tabla-eventos">
+                <div class="container">
+                  <h3 class="text-center m-b-2">Encontrá los eventos más relevantes de tu ubicación</h3>
+                  <div class="col-xs-12">
+                    <form>
+                      <div class="col-md-3 form-group">
+                        <input class="form-control" type="" name="" placeholder="Buenos Aires">
+                      </div>
+                      <div class="form-group col-md-3">
+                        <div class="input-group">
+                          <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
+                          <div class="input-group-addon bg-primary p-l-2 p-r-2">
+                            <i class="fa fa-calendar"></i>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group col-md-3">
+                        <div class="input-group">
+                          <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" placeholder="Hasta..." data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
+                          <div class="input-group-addon bg-primary p-l-2 p-r-2">
+                            <i class="fa fa-calendar"></i>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group col-md-3">
+                        <select required class="form-control select-agenda" id="">
+                          <option value="" selected disabled>Temática..</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div><!-- row -->
+
+                  <div class="row">
+                    <div class="col-sm-12 table-responsive">
+                      <table class="table dataTable no-footer" id="tablaCupones" role="grid" aria-describedby="tablaCupones_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Nro. de Voucher: activate to sort column descending" style="width: 160px;">Fecha y hora</th>
+                            <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Detalle: activate to sort column ascending" style="width: 300px;">Evento</th>
+                            <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Proforma: activate to sort column ascending" style="width: 435px;">Dirección</th>
+                            <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Factura: activate to sort column ascending" style="width: 200px;"></th>
+                          </tr>
+                        </thead>
+
+                        <tbody class="list">
+
+
+                          <tr role="row" class="odd">
+                            <th scope="row" class="sorting_1"><p class="text-info"><b>21 de Mayo <br> 16:30 hs </b></p></th>
+                            <td class="">
+                              <p class="m-r-2">Expoagro</p>      
+                            </td>
+                            <td class=""><p>Pabellón Amarillo, La Rural <br> <small>Av Santa Fe 1234, CABA</small></p></td>
+                            <td class="logos-redes"> 
+                              <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                            </td>
+                          </tr>
+
+
+                          <tr role="row" class="odd">
+                            <th scope="row" class="sorting_1"><p class="text-info"><b>23 de Mayo <br> 18:00 hs </b></p></th>
+                            <td class="">
+                              <p class="m-r-2">Fuck Up Night - Corrientes</p>      
+                            </td>
+                            <td class=""><p>Centro Cultural Abasto <br> <small>Av Corrientes 3452, CABA</small></p></td>
+                            <td class="logos-redes"> 
+                              <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                            </td>
+                          </tr>
+
+                          <tr role="row" class="odd">
+                            <th scope="row" class="sorting_1"><p class="text-info"><b>23 de Mayo <br> 19:30 hs </b></p></th>
+                            <td class="">
+                              <p class="m-r-2">Aula Virtual Segundo encuentro mensual de estudiantes de la Provincia de Buenos Aires</p>      
+                            </td>
+                            <td class=""><p>Centro Cultural Recoleta <br> <small>Junín 1930, CABA</small></p></td>
+                            <td class="logos-redes"> 
+                              <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                            </td>
+                          </tr>
+
+
+                          <tr role="row" class="odd">
+                            <th scope="row" class="sorting_1"><p class="text-info"><b>3 de Septiembre <br> 13:30 hs </b></p></th>
+                            <td class="">
+                              <p class="m-r-2">Taller de Modelo de negocios</p>      
+                            </td>
+                            <td class=""><p>Centro cultural Pasaje Dardo Rocha <br> <small>Calle 50 entre 6 y 7, La Plata</small></p></td>
+                            <td class="logos-redes"> 
+                              <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
+                              <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                            </td>
+                          </tr>
+
+
+
+                        </tbody>
+
+
+                      </table></div></div>
+
+
+                      <div class="row">
+                        <div class="col-sm-4 aligner p-b-2">
+                          
+                        </div>
+                        <div class="col-sm-8 aligner col-sm-offset-2">
+                          <div class="" id="">
+                            <ul class="center-block pagination">
+                              <li class="paginate_button previous disabled" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">&lt;</a></li>
+                              <li class="paginate_button active"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">1</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">2</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">3</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">4</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">5</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">6</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">7</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">8</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">9</a></li>
+                              <li class="paginate_button" id=""><a href="#" aria-controls="" data-dt-idx="2" tabindex="0">&gt;</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+
+
+                  
+
+                    <section class="bg-gclaro text-center">
+                      <h3 class="">Herramientas para Emprendedores</h3>
+                      <div class="container m-t-3">
+                        <div class="row panels-row panels-herramientas">
+
+                          <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a class="panel panel-default panel-icon panel-secondary" href="">
+                              <div class="panel-heading" style="background-color:#C2DC4D;">
+                                <i class="fa fa-usd fa-4x text-white text-center" aria-hidden="true"></i>
+                                <h4 class="text-center" style=""> <br>Fondo Semilla </h4>
+                              </div>
+                              <div class="panel-body text-left">
+                                <h3>Equipamiento Informático</h3>
+                                <p class="text-muted">Accedé a préstamos a tasa 0 de hasta $ 150.000 y asesoramiento para que puedas desarrollar tu proyecto</p>
+                              </div>
+                            </a>
+                          </div>
+
+                          <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a class="panel panel-default panel-icon panel-secondary" href="">
+                              <div class="panel-heading" style="background-color:#A8CD00;">
+                                <i class="fa fa-usd fa-4x text-white text-center" aria-hidden="true"></i>
+                                <h4 class="text-center" style="">Préstamo no reembolsable para emprender </h4>
+                              </div>
+                              <div class="panel-body text-left">
+                                <h3>PAC Emprendedores</h3>
+                                <p class="text-muted"> Accedé a $ 40.000 que no tenés que devolver y que cubren el 85% de tu proyecto    
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+
+                          <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a class="panel panel-default panel-icon panel-secondary" href="">
+                              <div class="panel-heading" style="background-color:#71CB90;">
+                                <i class="fa fa-usd fa-4x text-white text-center" aria-hidden="true"></i>
+                                <h4 class="text-center" style="">PyMES de economías regionales</h4>
+                              </div>
+                              <div class="panel-body text-left">
+                                <h3>PROCER</h3>
+                                <p class="text-muted"> Préstamos bancarios para las regiones NOA, NEA, Cuyo y Patagonia, con tasa máxima del 17% a 84 meses.    
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+
+
+                          <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a class="panel panel-default panel-icon panel-secondary" href="">
+                              <div class="panel-heading" style="background-color:#33B560;">
+                                <i class="fa fa-usd fa-4x text-white text-center" aria-hidden="true"></i>
+                                <h4 class="text-center" style="">Para proyectos de triple impacto</h4>
+                              </div>
+                              <div class="panel-body text-left">
+                                <h3>Empresas Sociales</h3>
+                                <p class="text-muted"> Si tu proyecto cumple con un propósito social y ambiental podés acceder a un préstamo de de hasta $ 150.000
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+
+
+                  </main>
+
+                  <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
+
+                  <footer class="main-footer bg-gclaro">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                          <ul>
+                            <li class="main-footer-titulo"><p style="">El Ministerio</p><p></p></li>
+                            <li><a href="http://www.produccion.gob.ar/institucional/mision/">Misión</a></li>
+                            <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">El Ministro</a></li>
+                            <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">Organigrama</a></li>
+                            <li><a href="http://www.produccion.gob.ar/institucional/secretarias/">Secretarías</a></li>
+                            <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/">Subsecretarías</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                          <ul>
+                            <li class="main-footer-titulo"><p style="">Trámites y Servicios</p></li>
+                            <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">Todos</a></li>
+                            <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PyMEs</a></li>
+                            <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">Emprendedores</a></li>
+                            <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">Consumidor</a></li>
+                            <li><a href="http://www.produccion.gob.ar/tramites-comercio/">Comercio Exterior</a></li>
+                            <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">Industria</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 text-xs-center text-md-left visible-sm visible-md visible-lg">
+                          <ul>
+                            <li class="main-footer-titulo"><p style="">Sala de Prensa</p></li>
+                            <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">Comunicados</a></li>
+                            <li><a href="http://www.produccion.gob.ar/sala-de-prensa/fotos/">Fotos</a></li>
+                            <li><a href="http://www.produccion.gob.ar/sala-de-prensa/videos/">Videos</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 text-xs-center text-md-left">
+                          <ul>
+                            <li class="main-footer-titulo"><p style="">Contacto</p></li>
+                            <li><a href="http://dna2-tests.produccion.gob.ar/dna2bpm/perfil/sugerencias" target="_blank">Ayuda</a></li>
+                            <li><a href="mailto:info@produccion.gob.ar" target="_blank">info@producción.gob.ar</a></li>
+                            <li><p>+54 (011) 4349.3697</p></li>
+                            <li><p>0800.333.7963</p></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8 pull-left main-footer-contacto">
+                          <p style=""> <small>2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB) CABA | Tel. 0800.333.7963 </small></p>
+                        </div>
+                        <div class="col-md-4 col-xs-12 img-ministerio">
+                          <img src="dist-palta/img/logoministerio.png" height="50">
+                        </div>
+                      </div>
+                    </div>
+
+                  </footer>
+
+                  
+
+                  <!-- jQuery 2.2.3 -->
+                  <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+                  <!-- Bootstrap 3.3.6 -->
+                  <script src="bootstrap/js/bootstrap.min.js"></script>
+                  
+                  <!-- Slimscroll -->
+                  <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+                  <!-- FastClick -->
+                  <script src="plugins/fastclick/fastclick.js"></script>
+                  <!-- AdminLTE App -->
+                  <script src="dist/js/app.min.js"></script>
+                  <!-- mapinit -->
+                  <script src="dist/js/mapinit.js"></script>
+                  <!-- iCheck -->
+                  <script src="plugins/iCheck/icheck.min.js"></script>
+                  <!-- Page Script -->
+
+
+                  <!-- FORMS AGENDA -->
+
+                  <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+                  <script type="text/javascript" src="plugins/bootstrap-fullscreen-select/js/bootstrap-fullscreen-select.js"></script>
+
+                  <!-- InputMask -->
+                  <script src="plugins/input-mask/jquery.inputmask.js"></script>
+                  <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+                  <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+                  <!-- Datepicker -->
+                  <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+                  <script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+
+                  <!-- scrollbar -->
+                  <script src="plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+
+                  <!-- AGENDA mapa js -->
+
+                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
+
+                  <!-- <script type="text/javascript">
+                    function initMap() {
+                      var uluru = {lat: -25.363, lng: 131.044};
+                      var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 4,
+                        center: uluru
+                      });
+                      var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                      });
+                    }
+                  </script> -->
+
+                  <!-- Activadores -->
+                  <script src="dist-palta/js/app.js"></script>
+
+                  <script type="text/javascript">
+                    $(".ecosistema-pills .nav-pills li a").click(function() {
+                      $(this).parent().addClass('active').siblings().removeClass('active');
+
+                      });
+                  </script>
+
+
+
+          <!-- SIDEBAR -->
+          <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+                // TOCO CHEVRON LEFT
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+                // TOCO HAMBURGUER
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+          </script>
+
+          <!-- SIDEBAR 2 -->
+          <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar-2").mCustomScrollbar({
+                    theme: "minimal"
+                });
+                // TOCO X DE SEARCH 
+                $('#dismiss-2').on('click', function () {
+                    $('#sidebar-2').removeClass('active');
+                    
+                });
+                // TOCO SEARCH
+                $('#sidebarCollapse-2').on('click', function () {
+                    $('#sidebar-2').addClass('active');
+                    // $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+          </script>
+
+                </body>
+                </html>

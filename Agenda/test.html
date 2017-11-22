@@ -1,0 +1,147 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>dashboard editar proyecto</title>
+  <link rel="shortcut icon" href="dist-palta/img/favicon.ico">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- BOOTSTRAP -->
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/templates.css">
+
+  <!-- FORMULARIO -->
+
+  <!-- iCheck -->
+  <link href="plugins/iCheck/all.css" rel="stylesheet">
+
+  <!-- BOOTSTRAP-Tags Input files -->
+  <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/examples/assets/app.css">
+
+  <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+  <link rel="stylesheet" type="text/css" href="plugins/bootstrap-fullscreen-select/css/bootstrap-fullscreen-select.css">
+
+  <!-- BOOTSTRAP-Choosen Autocomplete -->
+  <link rel="stylesheet" href="plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+  <!-- BOOTSTRAP-Datepicker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+
+  <!-- DATE-RANGE PICKER -->
+  <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="dist-palta/css/font-awesome.css">
+
+  <!-- Icono-Arg -->  
+  <link rel="stylesheet" href="dist-palta/css/icono-arg.css">
+
+  <!-- IONICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- FULL CALENDAR 2.2.5-->
+  <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
+  <!-- Theme style -->
+
+  <!-- ADMIN-LTE dist -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+  folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <!-- iCheck -->
+  
+  <!-- PALTA dist-palta -->
+  <link rel="stylesheet" href="dist-palta/css/poncho.min.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="dist-palta/css/palta.css">
+  <link rel="stylesheet" href="dist-palta/css/palta-adminLTE.css">    
+  
+</head>
+<body>
+
+
+
+<div class="wrapper">
+
+        <nav id="sidebar">
+            <!-- Close Sidebar Button -->
+            <div id="dismiss">
+                <i class="glyphicon glyphicon-arrow-left"></i>
+            </div>
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>Collapsible Sidebar</div>
+            </div>
+
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><!-- Link with dropdown items -->
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle Sidebar
+            </button>
+        <div>
+
+        <div class="overlay"><div>
+</div>
+
+
+                      <!-- jQuery 2.2.3 -->
+                      <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+                      <!-- Bootstrap 3.3.6 -->
+                      <script src="bootstrap/js/bootstrap.min.js"></script>
+                      <!-- Slimscroll -->
+                      
+
+                  <!-- scrollbar -->
+                  <script src="plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+ 
+
+                      <script type="text/javascript">
+                        $(document).ready(function () {
+
+                          $("#sidebar").mCustomScrollbar({
+                              theme: "minimal"
+                          });
+
+                          // when opening the sidebar
+                          $('#sidebarCollapse').on('click', function () {
+                              // open sidebar
+                              $('#sidebar').addClass('active');
+                              // fade in the overlay
+                              $('.overlay').fadeIn();
+                              $('.collapse.in').toggleClass('in');
+                              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                          });
+
+                         
+                          // if dismiss or overlay was clicked
+                          $('#dismiss, .overlay').on('click', function () {
+                            // hide the sidebar
+                            $('#sidebar').removeClass('active');
+                            // fade out the overlay
+                            $('.overlay').fadeOut();
+                          });
+                      });
+                      </script>
+
+
+                    </body>
+                    </html>

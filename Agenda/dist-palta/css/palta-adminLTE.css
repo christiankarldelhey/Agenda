@@ -532,3 +532,222 @@ header .dropdown-toggle .fa-user {
 }
 
 }
+
+
+
+/*MAPA*/
+
+.mapa-ecosistema {
+  padding:0px;
+  height:748;
+}
+
+.mapa-ecosistema-2  {
+  height:748px !important;
+}
+
+
+#map_container{
+ 
+}
+
+#map{
+    height: 100%;
+    
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: fixed;
+}
+
+/*MAPA SEARCH*/
+
+.mapa-search{
+  height:55px;
+  width:400px;
+  z-index:200;
+  position:absolute;
+  left:25px;
+  top:10px;
+  background-color: white;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+.mapa-search input {
+  border-radius: 0px !important;
+  border-left:none;
+  border-right:none;
+}
+
+.mapa-search .input-group-addon .fa {
+  font-size: 22px;
+  color:#B0B2B3;
+}
+
+.mapa-search .form-control:focus {
+  border-color: #d2d6de !important;
+  box-shadow: none;
+}
+
+/*SIDEBAR 1*/
+#sidebar {
+  width:400px;
+  background-color: white;
+  position: absolute;
+  left: -400px;
+  z-index:999;
+  transition: all 0.3s;
+  /*overflow-y: scroll;*/
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebarCollapse {
+  cursor: pointer;
+}
+
+#sidebar.active {
+  top:0px; 
+  left: 0;
+}
+
+
+/*SIDEBAR-2*/
+
+#sidebar-2 {
+  width:450px;
+  background-color: white;
+  position: absolute;
+  left: -450px;
+  z-index:10;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  height:auto;
+  
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebarCollapse-2 {
+  cursor: pointer;
+}
+
+#sidebar-2.active {
+  top:0px; 
+  left: 0;
+}
+
+
+
+#sidebar-2 .aside-main {
+  background-color: #F6F6F6;
+}
+
+#sidebar-2 .aside-main ul {
+  margin-right: 70px;
+  margin-left: 30px;
+  padding-top:20px;
+  padding-bottom:66px;
+}
+
+#sidebar-2 .fa {
+  color:#B0B2B3;
+  font-size: 25px;
+}
+
+#sidebar-2 ul .fa {
+  font-size: 18px;
+  padding-left:8px;
+  padding-right:10px;
+}
+
+#sidebar-2 .lista-puntos li {
+  padding-top:10px;
+  padding-bottom:8px;
+}
+
+.etiqueta-punto {
+  background-color: white; 
+  padding-right:180px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+#sidebar-2 .form-check-input {
+  margin-top:10px !important;
+}
+
+
+
+
+/*Aside header Boton chevron izquierda*/
+
+#dismiss {
+    /*position: absolute;
+    top: 10px;
+    right: 10px;*/
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.aside-header {
+  border-top:1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
+  padding-top:15px;
+}
+
+.aside-header .fa-bars {
+  font-size: 25px;
+  margin-left: 15px;  
+}
+
+
+/*Aside main*/
+
+.aside-main .fa {
+  color:#767676;
+  font-size: 25px;
+  margin-bottom:15px;
+  margin-top: 15px;
+}
+
+.aside-main .col-xs-10 {
+  padding-top: 15px !important;
+}
+
+.aside-main-list {
+  padding-left:70px;
+}
+
+#content {
+    transition: all 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+    display: none;
+}
+
+/*#test-pin {
+  font-size: 50px;
+  color:red;
+  position:fixed;
+  left:400px;
+  top:500px;
+  z-index:999;
+}*/
+
+.b-400 {
+  font-weight: 400;
+}
+
+
+
+
+
