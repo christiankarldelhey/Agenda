@@ -129,6 +129,7 @@
       
         <h3 class="text-center m-b-2">Encontrá las instituciones más cercanas a tu ubicación</h3>
         <section class="mapa-ecosistema bg-white">
+
           <!-- SEARCH OPEN SIDEBAR-->
             <div class="col-xs-12 mapa-search text-primary"> 
                 <div class="input-group search-input" style=""> 
@@ -140,7 +141,11 @@
                     <input class="form-control form-text" placeholder="Buscar" autofocus="" type="text" id="edit-keys" name="keys" value="" autocomplete="off" spellcheck="false" dir="auto" style="">
                     <span id="sidebarCollapse-2" class="input-group-addon">
                       <i class="fa fa-search"></i>
-                    </span>
+                      <span class="search-cruz" style="cursor:pointer;">
+                        <span style="font-size:25px; color:#B0B2B3; opacity: 0.6; padding-left: 5px; padding-right: 5px; font-weight:100;">|</span>
+                      <i class="fa fa-times"></i>
+                       </span>
+                      </span>
                 </div>
             </div>
 
@@ -148,7 +153,7 @@
             <aside id="sidebar" class="p-x-0">
                 <div class="col-xs-12 aside-header text-primary">
                   <i class="fa fa-bars" aria-hidden="true"></i>
-                  <span> &nbsp Acciones</span>
+                  <span style=""> &nbsp Acciones</span>
                   <span id="dismiss">
                     <i class="fa fa-chevron-left pull-right" aria-hidden="true"></i>
                   </span>
@@ -172,15 +177,42 @@
                         <span class="b-400">Sobre las instituciones</span>
                       </div>
                     </div>
-                    <div class="col-xs-12 ecosistema-pills">
-                      <ul class=" nav nav-pills nav-stacked   m-x-0 ">
-                        <li><a href=""><small class="aside-main-list">Incubadoras</small></a></li>
-                        <li><a href=""><small class="aside-main-list">Aceleradoras</small></a></li>
-                        <li><a href=""><small class="aside-main-list">Clubes de emprendedores</small></a></li>
-                        <li><a href=""><small class="aside-main-list">Universidades</small></a></li>
-                        <li><a href=""><small class="aside-main-list">Casas de la producción</small></a></li>
-                        <li><a href=""><small class="aside-main-list">Ciudades para emprender</small></a></li>
-                        <li><a href=""><small class="aside-main-list">Asociaciones</small></a></li>
+                    <div class="col-xs-12 p-x-0 ecosistema-pills">
+                      <ul class=" nav nav-pills nav-stacked m-x-0 ">
+                        <li class="sobre-instituciones" id="incubadoras">
+                          <a>
+                            <small class="aside-main-list">Incubadoras</small>
+                          </a>
+                        </li>
+                        <li class="sobre-instituciones" id="aceleradoras">
+                          <a>
+                            <small class="aside-main-list">Aceleradoras</small>
+                          </a>
+                        </li>
+                        <li class="sobre-instituciones" id="clubes">
+                          <a>
+                            <small class="aside-main-list">Clubes de emprendedores</small>
+                          </a>
+                        </li>
+                        <li class="sobre-instituciones" id="universidades">
+                          <a>
+                            <small class="aside-main-list">Universidades</small>
+                          </a>
+                        </li>
+                        <li class="sobre-instituciones" id="casas">
+                          <a>
+                            <small class="aside-main-list">Casas de la producción</small></a>
+                          </li>
+                        <li class="sobre-instituciones" id="ciudades">
+                          <a>
+                            <small class="aside-main-list">Ciudades para emprender</small>
+                          </a>
+                        </li class="sobre-instituciones" id="asociaciones">
+                        <li>
+                          <a>
+                            <small class="aside-main-list">Asociaciones</small>
+                          </a>
+                        </li>
                       </ul> 
                     </div>
 
@@ -229,11 +261,10 @@
                 <div class="aside-main">
                      
                   <ul class="list-unstyled lista-puntos">
+
                     <li class="">
                       <span class="form-check check-punto">
-                        <label class="active">
-                          <input class="form-check-input" type="checkbox" value="">
-                        </label>
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right" style="">
                         <span class="p-y-1">
@@ -241,9 +272,10 @@
                         </span><small>Incubadoras</small>
                       </span>
                     </li>
+
                     <li class="">
                       <span class="form-check check-punto">
-                          <input class="form-check-input" type="checkbox" value="">
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right" style="">
                         <span class="p-y-1">
@@ -253,7 +285,7 @@
                     </li>
                     <li class="">
                       <span class="form-check check-punto">
-                          <input class="form-check-input" type="checkbox" value="">
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right" style="">
                         <span class="p-y-1">
@@ -263,7 +295,7 @@
                     </li>
                     <li class="">
                       <span class="form-check check-punto">
-                          <input class="form-check-input" type="checkbox" value="">
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right" style="">
                         <span class="p-y-1">
@@ -273,7 +305,7 @@
                     </li>
                     <li class="">
                       <span class="form-check check-punto">
-                          <input class="form-check-input" type="checkbox" value="">
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right" style="">
                         <span class="p-y-1">
@@ -284,7 +316,7 @@
 
                     <li class="">
                       <span class="form-check check-punto">
-                          <input class="form-check-input" type="checkbox" value="">
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right">
                         <span class="p-y-1">
@@ -296,7 +328,7 @@
 
                     <li class="">
                       <span class="form-check check-punto">
-                          <input class="form-check-input" type="checkbox" value="">
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right" style="">
                         <span class="p-y-1">
@@ -306,7 +338,7 @@
                     </li>
                     <li class="">
                       <span class="form-check check-punto">
-                          <input class="form-check-input" type="checkbox" value="">
+                          <input class="form-check-input" type="checkbox" checked="checked" value="">
                       </span>
                       <span class="etiqueta-punto pull-right" style="">
                         <span class="p-y-1">
@@ -328,14 +360,15 @@
 
               <!-- FIN CONTENIDO PUNTOS -->
 
-              <!-- CLUB EMPRENDEDOR -->
+              <!-- EJEMPLO DE 1 CLUB EMPRENDEDOR -->
 
-              <div id="club" class="sidebar-institucion"  style="display:none;">
-                <div class="bg-danger" style="padding-top: 80px;">
-                  <div class="col-xs-12 bg-danger">
+              <div id="club" class="sidebar-institucion">
+
+                <div class="bg-club" style="padding-top: 80px;">
+                  <div class="col-xs-12 bg-club">
                     <div class="col-xs-9">
                       <h3>Club emprendedor <br> de Liniers</h3>
-                      <p><a href="">Saber más sobre clubes emprendedores</a></p>
+                      <p><a href="" style="text-decoration: underline;">Saber más sobre clubes emprendedores</a></p>
                     </div>
                     <div class="col-xs-3 como-llegar text-center">
                       <a href="">
@@ -351,29 +384,44 @@
 
 
                 <div class="col-xs-12 p-x-0 m-x-0" style="background-color: #F6F6F6;">
-                      <ul class="list-unstyled p-l-2 p-y-1">
-                        <li>
-                          <span><i class= "fa fa-map-marker text-primary" aria-hidden="true"></i></span>
-                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                      <ul class="list-unstyled p-l-2 p-y-1 institucion-contacto">
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-map-marker text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>Av. Humberto Primo 1453</small>
+                          </span>
                         </li>
-                        <li>
-                          <span><i class= "fa fa-phone text-primary" aria-hidden="true"></i></span>
-                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-phone text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>011-154363932</small>
+                          </span>
                         </li>
-                        <li>
-                          <span><i class= "fa fa-envelope text-primary" aria-hidden="true"></i></span>
-                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-envelope text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>mail@servicio.com.ar</small>
+                          </span>
                         </li>
-                        <li>
-                          <span><i class= "fa fa-user text-primary" aria-hidden="true"></i></span>
-                          <span><small>Lorem ipsum dolor sit amet</small></span>
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-user text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>Juan Carlos Mirafuentes</small>
+                          </span>
                         </li>
-
                       </ul>
-                  </div>
+                </div>
 
                   <div class="col-xs-12 p-t-1">
-                    <small>Próximo evento: <strong>09/05 - 18hs</strong> </small>
+                    <small class="text-muted p-b-1">Próximo evento: <strong>09/05 - 18hs</strong> </small>
                     <h4 class="m-t-0 text-primary">Semana del Coworking</h4>
                     <hr class="m-y-1">
                   </div>
@@ -388,11 +436,8 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
                   </div>
-                  
-              </div>
 
-              
-              <div class="col-xs-12 m-t-2">
+              <div class="col-xs-12 m-t-2 m-b-0 p-b-0">
                 <hr class="m-b-1 m-t-0">
                 <p><strong>Instituciones cercanas</strong></p>
                 <ul class="text-info">
@@ -403,10 +448,142 @@
                   <li>Club emprendedor de Avellaneda</li>
                   <li>Club emprendedor de Avellaneda</li>
                 </ul>
-
               </div>
 
+            </div> <!-- club -->
               <!-- FIN CLUB EMPRENDEDOR -->
+
+
+              <!-- EJEMPLO DE 1 INCUBADORA -->
+
+              <div id="incubadora" class="sidebar-institucion">
+
+                <div class="bg-incubadora" style="padding-top: 80px;">
+                  <div class="col-xs-12 bg-incubadora">
+                    <div class="col-xs-9">
+                      <h3>Incubadora <br> Lorem Ipsum</h3>
+                      <p><a href="" style="text-decoration: underline;">Saber más sobre las incubadoras</a></p>
+                    </div>
+                    <div class="col-xs-3 como-llegar text-center">
+                      <a href="">
+                      <div class="fa-stack fa-lg center-block">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="text-primary fa fa-share fa-stack-1x fa-inverse text-center"></i>
+                      </div>
+                      </a>
+                      <small class="text-center">Cómo llegar</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 p-x-0 m-x-0" style="background-color: #F6F6F6;">
+                      <ul class="list-unstyled p-l-2 p-y-1 institucion-contacto">
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-map-marker text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>Av. Humberto Primo 1453</small>
+                          </span>
+                        </li>
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-phone text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>011-154363932</small>
+                          </span>
+                        </li>
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-envelope text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>mail@servicio.com.ar</small>
+                          </span>
+                        </li>
+                        <li class="col-xs-12 p-x-0">
+                          <span class="col-xs-1 p-x-0 text-center">
+                            <i class= "fa fa-user text-primary" aria-hidden="true"></i>
+                          </span>
+                          <span class="col-xs-11 p-x-0">
+                            <small>Juan Carlos Mirafuentes</small>
+                          </span>
+                        </li>
+                      </ul>
+                </div>
+
+                  <div class="col-xs-12 p-t-1">
+                    <small class="text-muted p-b-1">Próximo evento: <strong>09/05 - 18hs</strong> </small>
+                    <h4 class="m-t-0 text-primary">Semana del Coworking</h4>
+                    <hr class="m-y-1">
+                  </div>
+                  
+
+                  <div class="col-xs-12 p-t-2">
+                    <p><strong>Información</strong></p>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+                  </div>
+
+              <div class="col-xs-12 m-t-2  m-b-0 p-b-0">
+                <hr class="m-b-1 m-t-0">
+                <p><strong>Instituciones cercanas</strong></p>
+                <ul class="text-info">
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                  <li>Club emprendedor de Avellaneda</li>
+                </ul>
+              </div>
+                
+
+            </div>
+            <!-- FIN INCUBADORA -->
+
+            <!-- SOBRE LAS INSTITUCIONES: INCUBADORAS -->
+            <div id="instituciones-incubadoras" class="sidebar-institucion">
+
+              <div class="instituciones-header"  style="">
+                  <span class="p-x-1" style="margin-left:23px;"> 
+                    <i class="fa fa-building" aria-hidden="true"></i></span>
+                  <span style="font-size: 20px; color:#454547;">Sobre las Instituciones</span>
+                  <span id="" class="search-cruz p-x-1"> <i class="pull-right fa fa-times" style="padding-right:32px;" aria-hidden="true"></i></span>
+              </div>  
+
+
+                  <div class="col-xs-12 p-t-2">
+                    <h4 class="text-primary"><strong>Incubadoras</strong></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+              <div class="col-xs-12 m-t-2">
+                <hr class="m-b-1 m-t-0">
+                <h5><strong>Todas las instituciones</strong></h5>
+                <ul class="text-info">
+                  <a href=""><li>Incubadoras</li></a>
+                  <a href=""><li>Aceleradoras</li></a>
+                  <a href=""><li>Clubes de emprendedores</li></a>
+                  <a href=""><li>Universidades</li></a>
+                  <a href=""><li>Casas de la producción</li></a>
+                  <a href=""><li>Ciudades para emprender</li></a>
+                  <a href=""><li>Asociaciones</li></a>
+                </ul>
+              </div>
+
+            </div>
+            <!-- FIN SOBRE INSTIUCIONES INCUBADORAS -->
 
             </aside>
 
@@ -414,23 +591,30 @@
 
             <!-- MAPA -->
             <div id="content" style="background-image: url(dist-palta/img/test-map-2.png); background-size:100%;" class="col-xs-12 p-l-0">
+
               <!-- Pines de test -->
-                <a href=""><span class="test-pin-club"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
-                <a href=""><span class="test-pin-incubadora"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
-                <a href=""><span class="test-pin-casa"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
-                <a href=""><span class="test-pin-casa"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
-                <a href=""><span class="test-pin-universidad"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
-                <a href=""><span class="test-pin-ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
-                <a href=""><span class="test-pin-aceleradora"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
-
-
                 
-              <!-- <div id="map_container" style="position:relative;">
+                  <span class="pin test-pin-club">
+                    <i class="fa fa-map-marker" aria-hidden="true">                      
+                      <!-- <i class="fa fa-circle pin-negro" aria-hidden="true"> -->
+                    </i>
+                  </span>
+                
+               
+                  <span class="pin test-pin-incubadora">
+                    <i class="fa fa-map-marker" aria-hidden="true">
+                      <!-- <i class="fa fa-circle pin-negro" aria-hidden="true"> -->
+                    </i>
+                  </span>
+                
+                <span class="pin test-pin-casa">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </span>
 
-              </div> -->
-              <!-- <div id="map" style="background-image: url(dist-palta/img/test-map.png);">
-
-              </div> -->
+                <a><span class="pin test-pin-casa"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
+                <a><span class="pin test-pin-universidad"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
+                <a><span class="pin test-pin-ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
+                <a><span class="pin test-pin-aceleradora"><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
             </div>
 
           </div> <!-- contenido puntos -->
@@ -583,10 +767,6 @@
 
                     </div>
                   </section>
-
-
-
-                  
 
                     <section class="bg-gclaro text-center">
                       <h3 class="">Herramientas para Emprendedores</h3>
@@ -751,7 +931,7 @@
 
                   <!-- AGENDA mapa js -->
 
-                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script>
+                  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIS-rpTTDk5qR_7kWYQu5HtC-QHEP2qJs&callback=initMap"></script> -->
 
                   <!-- <script type="text/javascript">
                     function initMap() {
@@ -776,7 +956,22 @@
 
                       });
                   </script>
+                  <script type="text/javascript">
+                    $('#popoverData').popover();
+                    
+                  </script>
+                  
 
+          <!-- ABRE SIDEBAR AL INICIO -->
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $('#sidebar-2').addClass('active');
+              $('.collapse.in').toggleClass('in');
+              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+              $('.sidebar-institucion').css('display', 'none');
+                });
+              
+          </script>
 
 
           <!-- SIDEBAR -->
@@ -785,8 +980,8 @@
                 $("#sidebar").mCustomScrollbar({
                     theme: "minimal"
                 });
-                // TOCO CHEVRON LEFT
-                $('#dismiss, .overlay').on('click', function () {
+                // TOCO CHEVRON RIGHT, EL OVERLAY O "SOBRE ALGUNA INSTITUCION"
+                $('#dismiss, .overlay, .sobre-instituciones').on('click', function () {
                     $('#sidebar').removeClass('active');
                     $('.overlay').fadeOut();
                 });
@@ -803,29 +998,83 @@
           <!-- SIDEBAR 2 -->
           <script type="text/javascript">
             $(document).ready(function () {
-                $("#sidebar-2").mCustomScrollbar({
-                    theme: "minimal"
-                });
-                // TOCO X DE SEARCH 
-                $('#dismiss-2').on('click', function () {
+
+                // TOCO LOS X DE SEARCH  
+                $('#dismiss-2, .search-cruz').on('click', function () {
                     $('#sidebar-2').removeClass('active');
                     
                 });
                 // TOCO SEARCH
-                $('#sidebarCollapse-2').on('click', function () {
+                // $('#sidebarCollapse-2').on('click', function () {
+                //     $('#sidebar-2').addClass('active');
+                //     $('.collapse.in').toggleClass('in');
+                //     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                // });
+
+                // TOCO CUALQUIER PIN 
+                $('.pin, .sobre-instituciones').on('click', function () {
                     $('#sidebar-2').addClass('active');
-                    // $('.overlay').fadeIn();
                     $('.collapse.in').toggleClass('in');
                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    $('#contenido-puntos').css('display', 'none');
+                    $('.sidebar-institucion').css('display', 'none');
+                    
+                    $(this).addClass('agrandado');
                 });
+
+                // TOCO PIN CLUB
                 $('.test-pin-club').on('click', function () {
-                    $('#sidebar-2').addClass('active');
-                    // $('.overlay').fadeIn();
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    $('#club').css('display', 'block');
                 });
+
+                // TOCO PIN INCUBADORA
+                $('.test-pin-incubadora').on('click', function () {
+                    $('#incubadora').css('display', 'block');                   
+                });
+
+
+
+
+
+                // TOCO INSTITUCIONES: INCUBADORAS
+                $('#incubadoras').on('click', function () {
+                    $('#instituciones-incubadoras').css('display', 'block');                  
+                });
+
+                // TOCO PIN CIUDAD
+                $('.test-pin-ciudad').on('click', function () {
+                    $('#ciudad').css('display', 'block');                   
+                });
+
+                // TOCO PIN ACELERADORA
+                $('.test-pin-aceleradora').on('click', function () {
+                    $('#aceleradora').css('display', 'block');                   
+                });
+
+                // TOCO PIN UNIVERSIDAD
+                $('.test-pin-universidad').on('click', function () {
+                    $('#universidad').css('display', 'block');                   
+                });
+
+                // TOCO PIN CASA
+                $('.test-pin-casa').on('click', function () {
+                    $('#casa').css('display', 'block');                   
+                });
+
+                // TOCO AFUERA
+                $('#content:not(span)').on('click', function (e) {
+                    if(e.target.tagName!='I')
+                    {
+                    $(this).find('.agrandado').removeClass('agrandado');
+                    $('#sidebar-2').removeClass('active');
+                    }
+                    
+                });
+
             });
           </script>
+
+
 
                 </body>
                 </html>

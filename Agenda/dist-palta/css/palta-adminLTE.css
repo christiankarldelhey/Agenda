@@ -535,7 +535,70 @@ header .dropdown-toggle .fa-user {
 
 
 
+
+
+
 /*MAPA*/
+
+/*COLORES*/
+
+.b-400 {
+  font-weight: 400;
+}
+
+/*Club*/
+.text-club {
+  color:#EF4D3D!important;
+}
+.bg-club, .bg-club a {
+  background-color:#EF4D3D!important;
+  color:white!important;
+}
+
+/*Incubadora*/
+.text-incubadora {
+  color:#FEC221!important;
+}
+.bg-incubadora, .bg-incubadora a {
+  background-color:#FEC221!important;
+  color:white!important;
+}
+
+/*Casa*/
+.text-casa {
+  color:#F7872F!important;
+}
+.bg-casa, .bg-casa a  {
+  background-color:#F7872F!important;
+  color:white!important;
+}
+
+/*Universidad*/
+.text-universidad {
+  color:#6C7CE3!important;
+}
+.bg-universidad, .bg-universidad a {
+  background-color:#6C7CE3!important;
+  color:white!important;
+}
+
+/*Aceleradora*/
+.text-aceleradora {
+  color:#00AFFF!important;
+}
+.bg-aceleradora, .bg-aceleradora a {
+  background-color:#00AFFF!important;
+  color:white!important;
+}
+
+/*Ciudad*/
+.text-ciudad {
+  color:#C0CA33!important;
+}
+.bg-ciudad, .bg-ciudad a {
+  background-color:#C0CA33!important;
+  color:white!important;
+}
 
 /*Section general*/
 .mapa-ecosistema {
@@ -605,6 +668,14 @@ header .dropdown-toggle .fa-user {
   left: 0;
 }
 
+#sidebar .fa-chevron-left {
+  font-size: 20px;
+  color:#B0B2B3;
+  padding-top: 5px;
+}
+
+
+
 /*CONTENIDO GENERAL*/
 
 #content {
@@ -614,9 +685,17 @@ header .dropdown-toggle .fa-user {
     height:748px !important;
 }
 
+.ecosistema-pills li a:hover, li a:active,li > a:focus {
+  color:#0695d6!important;
+}
+
 /*SIDEBAR-2*/
 
 /*Estilos generales y css dinamico*/
+
+.sidebar-institucion {
+  height:748px;
+}
 
 #sidebar-2 {
   width:450px;
@@ -626,9 +705,11 @@ header .dropdown-toggle .fa-user {
   z-index:10;
   transition: all 0.3s;
   max-height:748px;
-  overflow-y: hidden!important;
+  overflow-y: scroll !important;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
+
 
 #sidebarCollapse-2 {
   cursor: pointer;
@@ -698,7 +779,8 @@ header .dropdown-toggle .fa-user {
 
 .aside-header .fa-bars {
   font-size: 25px;
-  margin-left: 15px;  
+  margin-left: 15px;
+
 }
 
 
@@ -731,12 +813,20 @@ header .dropdown-toggle .fa-user {
 
 /*Sidebar-2 CONTENIDO-PUNTOS*/
 
+#contenido-puntos {
+  height:748px !important;
+}
+
 #contenido-puntos .fa {
   color:#B0B2B3;
   font-size: 25px;
 }
 
 /*Sidebar-2 CLUB*/
+
+#club {
+  display:none;
+}
 
 .como-llegar .fa-circle {
   font-size: 60px;
@@ -758,102 +848,95 @@ header .dropdown-toggle .fa-user {
 }
 
 
+
+.institucion-contacto .fa {
+  font-size: 20px !important;
+}
+
+.institucion-contacto li {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+/*SIDEBAR-2 SOBRE LAS INSTITUCIONES ESTILOS*/
+
+.instituciones-header {
+  background-color:#F9F9F9;
+  padding-top: 90px;
+  padding-bottom:30px;
+}
+
+.instituciones-header .fa {
+  color: #B0B2B3;
+  font-size: 25px;
+}
+
+
 /*PINES DEL MAPA */
 
-.test-pin-club {
-  font-size: 50px;
-  color:#EF4D3D;
+.pin {
+  font-size: 40px;
   position:absolute;
+  z-index:300;
+  cursor: pointer;
+}
+
+.test-pin-club {
+  color:#EF4D3D;
   left:990px;
   top:100px;
-  z-index:300;
-}
-
-a.test-pin-club:focus {
-  font-size:60px;
-}
-
-.text-club {
-  color:#EF4D3D!important;
 }
 
 .test-pin-incubadora {
-  font-size: 50px;
   color:#FEC221;
-  position:absolute;
   left:600px;
-  top:200px;
-  z-index:300;
-}
-
-.text-incubadora {
-  color:#FEC221!important;
+  top:200px;  
 }
 
 .test-pin-casa {
-  font-size: 50px;
   color:#F7872F;
-  position:absolute;
   left:850px;
   top:200px;
-  z-index:300;
-}
-
-.text-casa {
-  color:#F7872F!important;
 }
 
 .test-pin-universidad {
-  font-size: 50px;
   color:#6C7CE3;
-  position:absolute;
   left:630px;
   top:250px;
-  z-index:300;
-}
-
-.text-universidad {
-  color:#6C7CE3!important;
 }
 
 .test-pin-aceleradora {
-  font-size: 50px;
   color:#00AFFF;
-  position:absolute;
   left:750px;
   top:350px;
-  z-index:300;
-}
-
-.text-aceleradora {
-  color:#00AFFF!important;
 }
 
 .test-pin-ciudad {
-  font-size: 50px;
   color:#C0CA33;
-  position:absolute;
   left:500px;
   top:380px;
-  z-index:300;
 }
 
-.text-ciudad {
-  color:#C0CA33!important;
+/*#content .fa-map-marker {
+  position: relative;
+}*/
+
+.pin-negro {
+  font-size: 16px;
+  position:absolute;
+  top:17%;
+  left:20%;
+  color:black;
+  z-index:280;
 }
 
-
-
-
-
-
-
-
-.b-400 {
-  font-weight: 400;
+.agrandado .fa-map-marker {
+  font-size:50px!important;
 }
 
-
+.agrandado .pin-negro {
+  font-size:20px!important;
+}
 
 
 
