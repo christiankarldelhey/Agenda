@@ -685,6 +685,10 @@ header .dropdown-toggle .fa-user {
     height:748px !important;
 }
 
+#dismiss-2 i {
+  cursor:pointer;
+}
+
 .ecosistema-pills li a:hover, li a:active,li > a:focus {
   color:#0695d6!important;
 }
